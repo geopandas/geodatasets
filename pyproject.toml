@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project]
+name = "xyzdata"
+dynamic = ["version"]
+authors = [
+    {name = "Martin Fleischmann", email = "martin@martinfleischmann.net"},
+]
+maintainers = [
+    {name = "xyzdata contributors"},
+]
+license = {text = "-Clause BSD"}
+description = "Spatial data examples"
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "pooch"
+]
+
+[project.urls]
+Home = "https://github.com/martinfleis/xyzdata"
+Repository = "https://github.com/martinfleis/xyzdata"
+
+[tool.setuptools.packages.find]
+include = [
+    "xyzdata",
+    "xyzdata.*",
+]
+
+[tool.setuptools.package-data]
+myModule = ["json/providers.json"]
+
+[tool.coverage.run]
+omit = ["xyzdata/tests/*"]
