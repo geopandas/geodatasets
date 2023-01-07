@@ -138,14 +138,15 @@ class DataItem(Bunch):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        required = ["name", "url", "hash", "filename"]
         missing = []
-        for el in ["name", "url", "attribution"]:
+        for el in required:
             if el not in self.keys():
                 missing.append(el)
         if len(missing) > 0:
             msg = (
-                f"The attributes `name`, `url`, "
-                f"and `attribution` are required to initialise "
+                f"The attributes {required} "
+                f"are required to initialise "
                 f"a `DataItem`. Please provide values for: "
                 f'`{"`, `".join(missing)}`'
             )
@@ -159,12 +160,6 @@ class DataItem(Bunch):
     def copy(self, **kwargs) -> DataItem:
         new = DataItem(self)  # takes a copy preserving the class
         return new
-
-    @property
-    def html_attribution(self):
-        if "html_attribution" in self.keys():
-            return self["html_attribution"]
-        return self["attribution"]
 
     def _repr_html_(self, inside=False):
         item_info = ""

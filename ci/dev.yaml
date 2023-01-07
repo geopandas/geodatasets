@@ -1,0 +1,11 @@
+name: test
+channels:
+  - conda-forge
+dependencies:
+  - python
+  # tests
+  - pytest
+  - pytest-cov
+  - pip
+  - pip:
+      - git+https://github.com/fatiando/pooch.git@main

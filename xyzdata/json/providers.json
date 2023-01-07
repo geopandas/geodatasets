@@ -808,7 +808,7 @@
 
     "ny": {
         "bb": {
-            "url": "https://data.cityofnewyork.us/api/geospatial/tqmj-j8zm?method=export&format=Shapefile",
+            "url": "https://data.cityofnewyork.us/api/geospatial/tqmj-j8zm?method=export&format=Original",
             "license": "NA",
             "attribution": "Department of City Planning (DCP)",
             "name": "ny.bb",
@@ -816,8 +816,8 @@
             "details": "https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm",
             "nrows": 5,
             "ncols": 5,
-            "hash": "fa399b11e53a9a00306ae8525b22f540b90268c626aa3e0ddc38e06214890e5d",
-            "filename": "nybb_16a.zip"
+            "hash": "26257f5a3c06765557b302f36774d4d21acb257aa8f9d4a4694d436432160051",
+            "filename": "nybb_22c.zip"
         }
     }
 }

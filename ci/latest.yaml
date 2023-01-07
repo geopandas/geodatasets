@@ -1,0 +1,9 @@
+name: test
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pooch
+  # tests
+  - pytest
+  - pytest-cov
