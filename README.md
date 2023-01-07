@@ -42,52 +42,51 @@ Out[2]:
    ...
 ```
 
-You can get all the details exactly as you would with `xyzservices`. Only `query_name`
-and `flatten` methods are available.
-
-```py
-In [3]: xyzdata.data.geoda.airbnb
-Out[3]:
-{'url': 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip',
- 'license': 'CC-0',
- 'attribution': 'GeoDa Data and Lab',
- 'name': 'geoda.airbnb',
- 'description': 'Airbnb rentals, socioeconomics, and crime in Chicago',
- 'nrows': 77,
- 'ncols': 20,
- 'details': 'https://geodacenter.github.io/data-and-lab//airbnb/',
- 'hash': 'a2ab1e3f938226d287dd76cde18c00e2d3a260640dd826da7131827d9e76c824',
- 'filename': 'airbnb.zip'}
-```
-
-Query:
-
-```py
-In [4]: xyzdata.data.query_name('geoda airbnb')
-Out[4]:
-{'url': 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip',
- 'license': 'CC-0',
- 'attribution': 'GeoDa Data and Lab',
- 'name': 'geoda.airbnb',
- 'description': 'Airbnb rentals, socioeconomics, and crime in Chicago',
- 'nrows': 77,
- 'ncols': 20,
- 'details': 'https://geodacenter.github.io/data-and-lab//airbnb/',
- 'hash': 'a2ab1e3f938226d287dd76cde18c00e2d3a260640dd826da7131827d9e76c824',
- 'filename': 'airbnb.zip'}
-```
-
 There is also convenient top-level API. One to get only the URL:
 
 ```py
-In [6]: xyzdata.get_url("geoda airbnb")
-Out[6]: 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip'
+In [3]: xyzdata.get_url("geoda airbnb")
+Out[3]: 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip'
 ```
 
 And one to get the local path. If the file is not available in the cache, it will be
 downloaded first.
 
 ```py
-In [7]: xyzdata.get_path('geoda airbnb')
-Out[7]: '/Users/martin/Library/Caches/xyzdata/airbnb.zip'
+Out[4]: '/Users/martin/Library/Caches/xyzdata/airbnb.zip'
+In [4]: xyzdata.get_path('geoda airbnb')
+```
+
+You can also get all the details:
+
+```py
+In [5]: xyzdata.data.geoda.airbnb
+Out[5]:
+{'url': 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip',
+ 'license': 'CC-0',
+ 'attribution': 'GeoDa Data and Lab',
+ 'name': 'geoda.airbnb',
+ 'description': 'Airbnb rentals, socioeconomics, and crime in Chicago',
+ 'nrows': 77,
+ 'ncols': 20,
+ 'details': 'https://geodacenter.github.io/data-and-lab//airbnb/',
+ 'hash': 'a2ab1e3f938226d287dd76cde18c00e2d3a260640dd826da7131827d9e76c824',
+ 'filename': 'airbnb.zip'}
+```
+
+Or using the name query:
+
+```py
+In [6]: xyzdata.data.query_name('geoda airbnb')
+Out[6]:
+{'url': 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip',
+ 'license': 'CC-0',
+ 'attribution': 'GeoDa Data and Lab',
+ 'name': 'geoda.airbnb',
+ 'description': 'Airbnb rentals, socioeconomics, and crime in Chicago',
+ 'nrows': 77,
+ 'ncols': 20,
+ 'details': 'https://geodacenter.github.io/data-and-lab//airbnb/',
+ 'hash': 'a2ab1e3f938226d287dd76cde18c00e2d3a260640dd826da7131827d9e76c824',
+ 'filename': 'airbnb.zip'}
 ```

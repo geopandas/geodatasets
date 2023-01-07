@@ -76,17 +76,6 @@ class Bunch(dict):
         -------
         flattened : dict
             dictionary of :class:`DataItem` objects
-
-        Examples
-        --------
-        >>> import xyzdata.items as xyz
-        >>> len(xyz)
-        36
-
-        >>> flat = xyz.flatten()
-        >>> len(xyz)
-        207
-
         """
 
         flat = {}
