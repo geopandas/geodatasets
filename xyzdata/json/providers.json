@@ -120,18 +120,6 @@
             "hash": "1dbebb50c8ea47e2279ea819ef64ba793bdee2b88e4716bd6c6ec0e0d8e0e05b",
             "filename": "chicago_commpop.zip"
         },
-        "chicago_parcels": {
-            "url": "https://uchicago.box.com/s/j2d2ch5uvckse24y8l7vh9198wnq216i",
-            "license": "NA",
-            "attribution": "GeoDa Data and Lab",
-            "name": "geoda.chicago_parcels",
-            "description": "Tax parcel polygons of Cook county",
-            "nrows": 592521,
-            "ncols": 5,
-            "details": "https://geodacenter.github.io/data-and-lab//parcels/",
-            "hash": "71c9f210a4097e480a0113e610c3c0d707c4b373bb34fc85f139c6a9b5c2639a",
-            "filename": "chicago_parcels.zip"
-        },
         "chile_labor": {
             "url": "https://geodacenter.github.io/data-and-lab//data/flma.zip",
             "license": "NA",
@@ -143,18 +131,6 @@
             "details": "https://geodacenter.github.io/data-and-lab//FLMA/",
             "hash": "4777072268d0127b3d0be774f51d0f66c15885e9d3c92bc72c641a72f220796c",
             "filename": "flma.zip"
-        },
-        "chile_migration": {
-            "url": "https://uchicago.box.com/s/yqc97nq23hoeeqo5lkc2grlg98skokgk",
-            "license": "NA",
-            "attribution": "GeoDa Data and Lab",
-            "name": "geoda.chile_migration",
-            "description": "Internal Migration in Chile (1977-2002)",
-            "nrows": 304,
-            "ncols": 10,
-            "details": "https://geodacenter.github.io/data-and-lab//CHIM/",
-            "hash": "56c59771724e090a5b1da649c8b7128817e940179bce96c510321992cca72bf6",
-            "filename": "CHIM.zip"
         },
         "cincinnati": {
             "url": "https://geodacenter.github.io/data-and-lab//data/walnuthills_updated.zip",
