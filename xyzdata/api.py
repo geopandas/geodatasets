@@ -37,3 +37,18 @@ def get_path(name):
         _description_
     """
     return CACHE.fetch(data.query_name(name).filename)
+
+
+def fetch(name):
+    """_summary_
+
+    Parameters
+    ----------
+    name : _type_
+        _description_
+    """
+    if isinstance(name, str):
+        name = [name]
+
+    for n in name:
+        _ = CACHE.fetch(data.query_name(n).filename)
