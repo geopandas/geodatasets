@@ -2,7 +2,7 @@
     "geoda": {
         "airbnb": {
             "url": "https://geodacenter.github.io/data-and-lab//data/airbnb.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.airbnb",
             "description": "Airbnb rentals, socioeconomics, and crime in Chicago",
@@ -14,7 +14,7 @@
         },
         "atlanta": {
             "url": "https://geodacenter.github.io/data-and-lab//data/atlanta_hom.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.atlanta",
             "description": "Atlanta, GA region homicide counts and rates",
@@ -26,7 +26,7 @@
         },
         "baltimore": {
             "url": "https://geodacenter.github.io/data-and-lab//data/baltimore.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.baltimore",
             "description": "Baltimore house sales prices and hedonics",
@@ -38,7 +38,7 @@
         },
         "bostonhsg": {
             "url": "https://geodacenter.github.io/data-and-lab//data/boston.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.bostonhsg",
             "description": "Boston housing and neighborhood data",
@@ -50,7 +50,7 @@
         },
         "buenosaires": {
             "url": "https://geodacenter.github.io/data-and-lab//data/buenosaires.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.buenosaires",
             "description": "Electoral Data for 1999 Argentinean Elections",
@@ -62,7 +62,7 @@
         },
         "cars": {
             "url": "https://geodacenter.github.io/data-and-lab//data/Abandoned_Vehicles_Map.csv",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.cars",
             "description": "2011 abandoned vehicles in Chicago (311 complaints).",
@@ -74,7 +74,7 @@
         },
         "charleston1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/CharlestonMSA.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.charleston1",
             "description": "2000 Census Tract Data for Charleston, SC MSA and counties",
@@ -86,7 +86,7 @@
         },
         "charleston2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/CharlestonMSA2.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.charleston2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Charleston, SC MSA",
@@ -98,7 +98,7 @@
         },
         "chicago_health": {
             "url": "https://geodacenter.github.io/data-and-lab//data/comarea.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.chicago_health",
             "description": "Chicago Health + Socio-Economics",
@@ -110,7 +110,7 @@
         },
         "chicago_commpop": {
             "url": "https://geodacenter.github.io/data-and-lab//data/chicago_commpop.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.chicago_commpop",
             "description": "Chicago Community Area Population Percent Change for 2000 and 2010",
@@ -122,7 +122,7 @@
         },
         "chicago_parcels": {
             "url": "https://uchicago.box.com/s/j2d2ch5uvckse24y8l7vh9198wnq216i",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.chicago_parcels",
             "description": "Tax parcel polygons of Cook county",
@@ -134,7 +134,7 @@
         },
         "chile_labor": {
             "url": "https://geodacenter.github.io/data-and-lab//data/flma.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.chile_labor",
             "description": "Labor Markets in Chile (1982-2002)",
@@ -146,7 +146,7 @@
         },
         "chile_migration": {
             "url": "https://uchicago.box.com/s/yqc97nq23hoeeqo5lkc2grlg98skokgk",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.chile_migration",
             "description": "Internal Migration in Chile (1977-2002)",
@@ -158,7 +158,7 @@
         },
         "cincinnati": {
             "url": "https://geodacenter.github.io/data-and-lab//data/walnuthills_updated.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.cincinnati",
             "description": "2008 Cincinnati Crime + Socio-Demographics",
@@ -170,7 +170,7 @@
         },
         "cleveland": {
             "url": "https://geodacenter.github.io/data-and-lab//data/cleveland.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.cleveland",
             "description": "2015 sales prices of homes in Cleveland, OH.",
@@ -182,7 +182,7 @@
         },
         "columbus": {
             "url": "https://geodacenter.github.io/data-and-lab//data/columbus.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.columbus",
             "description": "Columbus neighborhood crime",
@@ -194,7 +194,7 @@
         },
         "elections": {
             "url": "https://geodacenter.github.io/data-and-lab//data/election.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.elections",
             "description": "2012 and 2016 Presidential Elections",
@@ -206,7 +206,7 @@
         },
         "grid100": {
             "url": "https://geodacenter.github.io/data-and-lab//data/grid100.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.grid100",
             "description": "Grid with simulated variables",
@@ -218,7 +218,7 @@
         },
         "groceries": {
             "url": "https://geodacenter.github.io/data-and-lab//data/grocery.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.groceries",
             "description": "2015 Chicago supermarkets",
@@ -230,7 +230,7 @@
         },
         "guerry": {
             "url": "https://geodacenter.github.io/data-and-lab//data/guerry.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.guerry",
             "description": "Moral statistics of France (Guerry, 1833)",
@@ -242,7 +242,7 @@
         },
         "health+": {
             "url": "https://geodacenter.github.io/data-and-lab//data/income_diversity.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.health+",
             "description": "2000 Health, Income + Diversity",
@@ -254,7 +254,7 @@
         },
         "health_indicators": {
             "url": "https://geodacenter.github.io/data-and-lab//data/healthIndicators.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.health_indicators",
             "description": "Chicago Health Indicators (2005-11)",
@@ -266,7 +266,7 @@
         },
         "hickory1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/HickoryMSA.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.hickory1",
             "description": "2000 Census Tract Data for Hickory, NC MSA and counties",
@@ -278,7 +278,7 @@
         },
         "hickory2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/HickoryMSA2.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.hickory2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Hickory, NC MSA",
@@ -290,7 +290,7 @@
         },
         "home_sales": {
             "url": "https://geodacenter.github.io/data-and-lab//data/kingcounty.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.home_sales",
             "description": "2014-15 Home Sales in King County, WA",
@@ -302,7 +302,7 @@
         },
         "houston": {
             "url": "https://geodacenter.github.io/data-and-lab//data/houston_hom.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.houston",
             "description": "Houston, TX region homicide counts and rates",
@@ -314,7 +314,7 @@
         },
         "juvenile": {
             "url": "https://geodacenter.github.io/data-and-lab//data/juvenile.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.juvenile",
             "description": "Cardiff juvenile delinquent residences",
@@ -326,7 +326,7 @@
         },
         "lansing1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/LansingMSA.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.lansing1",
             "description": "2000 Census Tract Data for Lansing, MI MSA and counties",
@@ -338,7 +338,7 @@
         },
         "lansing2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/LansingMSA2.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.lansing2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Lansing, MI MSA",
@@ -350,7 +350,7 @@
         },
         "laozone": {
             "url": "https://geodacenter.github.io/data-and-lab//data/laozone.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.laozone",
             "description": "Ozone measures at monitoring stations in Los Angeles basin",
@@ -362,7 +362,7 @@
         },
         "lasrosas": {
             "url": "https://geodacenter.github.io/data-and-lab//data/lasrosas.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.lasrosas",
             "description": "Corn yield, fertilizer and field data for precision agriculture, Argentina, 1999",
@@ -374,7 +374,7 @@
         },
         "liquor_stores": {
             "url": "https://geodacenter.github.io/data-and-lab//data/liquor.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.liquor_stores",
             "description": "2015 Chicago Liquor Stores",
@@ -386,7 +386,7 @@
         },
         "malaria": {
             "url": "https://geodacenter.github.io/data-and-lab//data/malariacolomb.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.malaria",
             "description": "Malaria incidence and population (1973, 95, 93 censuses and projections until 2005)",
@@ -398,7 +398,7 @@
         },
         "milwaukee1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/MilwaukeeMSA.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.milwaukee1",
             "description": "2000 Census Tract Data for Milwaukee, WI MSA",
@@ -410,7 +410,7 @@
         },
         "milwaukee2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/MilwaukeeMSA2.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.milwaukee2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Milwaukee, WI MSA",
@@ -422,7 +422,7 @@
         },
         "ncovr": {
             "url": "https://geodacenter.github.io/data-and-lab//data/ncovr.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.ncovr",
             "description": "US county homicides 1960-1990",
@@ -434,7 +434,7 @@
         },
         "natregimes": {
             "url": "https://geodacenter.github.io/data-and-lab//data/natregimes.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.natregimes",
             "description": "NCOVR with regimes (book/PySAL)",
@@ -446,7 +446,7 @@
         },
         "ndvi": {
             "url": "https://geodacenter.github.io/data-and-lab//data/ndvi.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.ndvi",
             "description": "Normalized Difference Vegetation Index grid",
@@ -458,7 +458,7 @@
         },
         "nepal": {
             "url": "https://geodacenter.github.io/data-and-lab//data/nepal.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.nepal",
             "description": "Health, poverty and education indicators for Nepal districts",
@@ -470,7 +470,7 @@
         },
         "nyc": {
             "url": "https://geodacenter.github.io/data-and-lab///data/nyc.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.nyc",
             "description": "Demographic and housing data for New York City subboroughs, 2002-09",
@@ -482,7 +482,7 @@
         },
         "nyc_earnings": {
             "url": "https://geodacenter.github.io/data-and-lab//data/lehd.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.nyc_earnings",
             "description": "Block-level Earnings in NYC (2002-14)",
@@ -494,7 +494,7 @@
         },
         "nyc_education": {
             "url": "https://geodacenter.github.io/data-and-lab//data/nyc_2000Census.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.nyc_education",
             "description": "NYC Education (2000)",
@@ -506,7 +506,7 @@
         },
         "nyc_neighborhoods": {
             "url": "https://geodacenter.github.io/data-and-lab//data/nycnhood_acs.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.nyc_neighborhoods",
             "description": "Demographics for New York City neighborhoods",
@@ -518,7 +518,7 @@
         },
         "nyc_socio-demographics": {
             "url": "https://geodacenter.github.io/data-and-lab//data/nyctract_acs.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.nyc_socio-demographics",
             "description": "NYC Education + Socio-Demographics",
@@ -530,7 +530,7 @@
         },
         "ohiolung": {
             "url": "https://geodacenter.github.io/data-and-lab//data/ohiolung.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.ohiolung",
             "description": "Ohio lung cancer data, 1968, 1978, 1988",
@@ -542,7 +542,7 @@
         },
         "orlando1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/OrlandoMSA.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.orlando1",
             "description": "2000 Census Tract Data for Orlando, FL MSA and counties",
@@ -554,7 +554,7 @@
         },
         "orlando2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/OrlandoMSA2.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.orlando2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Orlando, FL MSA",
@@ -566,7 +566,7 @@
         },
         "oz9799": {
             "url": "https://geodacenter.github.io/data-and-lab//data/oz9799.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.oz9799",
             "description": "Monthly ozone data, 1997-99",
@@ -578,7 +578,7 @@
         },
         "phoenix_acs": {
             "url": "https://geodacenter.github.io/data-and-lab//data/phx2.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.phoenix_acs",
             "description": "Phoenix American Community Survey Data (2010, 5-year averages)",
@@ -590,7 +590,7 @@
         },
         "pittsburgh": {
             "url": "https://geodacenter.github.io/data-and-lab//data/pittsburgh.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.pittsburgh",
             "description": "Pittsburgh homicide locations",
@@ -602,7 +602,7 @@
         },
         "police": {
             "url": "https://geodacenter.github.io/data-and-lab//data/police.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.police",
             "description": "Police expenditures Mississippi counties",
@@ -614,7 +614,7 @@
         },
         "sacramento1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/sacramento.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.sacramento1",
             "description": "2000 Census Tract Data for Sacramento MSA",
@@ -626,7 +626,7 @@
         },
         "sacramento2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SacramentoMSA2.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.sacramento2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Sacramento MSA",
@@ -638,7 +638,7 @@
         },
         "sanfran_crime": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SFCrime_July_Dec2012.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.sanfran_crime",
             "description": "July-Dec 2012 crime incidents in San Francisco (points + area) - for CAST",
@@ -650,7 +650,7 @@
         },
         "savannah1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SavannahMSA.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.savannah1",
             "description": "2000 Census Tract Data for Savannah, GA MSA and counties",
@@ -662,7 +662,7 @@
         },
         "savannah2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SavannahMSA2.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.savannah2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Savannah, GA MSA",
@@ -674,7 +674,7 @@
         },
         "scotlip": {
             "url": "https://geodacenter.github.io/data-and-lab//data/scotlip.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.scotlip",
             "description": "Male lip cancer in Scotland, 1975-80",
@@ -686,7 +686,7 @@
         },
         "seattle1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SeattleMSA.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.seattle1",
             "description": "2000 Census Tract Data for Seattle, WA MSA and counties",
@@ -698,7 +698,7 @@
         },
         "seattle2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SeattleMSA2.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.seattle2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Seattle, WA MSA",
@@ -710,7 +710,7 @@
         },
         "sids": {
             "url": "https://geodacenter.github.io/data-and-lab//data/sids.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.sids",
             "description": "North Carolina county SIDS death counts",
@@ -722,7 +722,7 @@
         },
         "sids2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/sids2.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.sids2",
             "description": "North Carolina county SIDS death counts and rates",
@@ -734,7 +734,7 @@
         },
         "snow": {
             "url": "https://geodacenter.github.io/data-and-lab//data/snow.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.snow",
             "description": "John Snow & the 19th Century Cholera Epidemic",
@@ -746,7 +746,7 @@
         },
         "south": {
             "url": "https://geodacenter.github.io/data-and-lab//data/south.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.south",
             "description": "US Southern county homicides 1960-1990",
@@ -758,7 +758,7 @@
         },
         "spirals": {
             "url": "https://geodacenter.github.io/data-and-lab//data/spirals.csv",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.spirals",
             "description": "Synthetic spiral points",
@@ -770,7 +770,7 @@
         },
         "stlouis": {
             "url": "https://geodacenter.github.io/data-and-lab//data/stlouis.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.stlouis",
             "description": "St Louis region county homicide counts and rates",
@@ -782,7 +782,7 @@
         },
         "tampa1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/TampaMSA.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.tampa1",
             "description": "2000 Census Tract Data for Tampa, FL MSA and counties",
@@ -794,7 +794,7 @@
         },
         "us_sdoh": {
             "url": "https://geodacenter.github.io/data-and-lab//data/us-sdoh-2014.zip",
-            "license": "CC-0",
+            "license": "NA",
             "attribution": "GeoDa Data and Lab",
             "name": "geoda.us_sdoh",
             "description": "2014 US Social Determinants of Health Data",
@@ -808,15 +808,15 @@
 
     "ny": {
         "bb": {
-            "url": "https://github.com/geopandas/geopandas/raw/main/geopandas/datasets/nybb_16a.zip",
-            "license": "CC-0",
-            "attribution": "(C) OpenStreetMap contributors",
+            "url": "https://data.cityofnewyork.us/api/geospatial/tqmj-j8zm?method=export&format=Shapefile",
+            "license": "NA",
+            "attribution": "Department of City Planning (DCP)",
             "name": "ny.bb",
             "description": "The borough boundaries of New York City clipped to the shoreline at mean high tide.",
             "details": "https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm",
             "nrows": 5,
             "ncols": 5,
-            "hash": "sha256:b4a98fc3b77be5af58676de9560c2782b902b83d1d8c7914dea8d0e75177e2a1",
+            "hash": "fa399b11e53a9a00306ae8525b22f540b90268c626aa3e0ddc38e06214890e5d",
             "filename": "nybb_16a.zip"
         }
     }
