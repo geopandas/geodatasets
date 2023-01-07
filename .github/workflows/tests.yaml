@@ -44,6 +44,6 @@ jobs:
 
       - name: test data
         run: pytest -v . -m "request" --cov=xyzdata --cov-append --cov-report term-missing --cov-report xml --color=yes
-        if: matrix.os == 'ubuntu-latest' & matrix.environment-file == 'ci/latest.yaml'
+        if: matrix.os == 'ubuntu-latest' && matrix.environment-file == 'ci/latest.yaml'
 
       - uses: codecov/codecov-action@v3
