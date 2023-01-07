@@ -1,3 +1,3 @@
-from .lib import Bunch, DataItem  # noqa
+from .api import get_path, get_url  # noqa
 from .data import data  # noqa
-from .api import get_url, get_path  # noqa
+from .lib import Bunch, DataItem  # noqa

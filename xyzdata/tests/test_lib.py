@@ -1,6 +1,6 @@
 import pytest
 
-from xyzdata import data, DataItem, Bunch
+from xyzdata import Bunch, DataItem, data
 
 
 @pytest.fixture

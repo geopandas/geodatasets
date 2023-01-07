@@ -1,7 +1,9 @@
-import xyzdata
-import pytest
-import pooch
 from pathlib import Path
+
+import pooch
+import pytest
+
+import xyzdata
 
 
 @pytest.mark.request

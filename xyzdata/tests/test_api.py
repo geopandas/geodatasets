@@ -1,14 +1,16 @@
-import xyzdata
 import os
-import pooch
 from pathlib import Path
+
+import pooch
+
+import xyzdata
 
 
 def test_get_url():
     url = xyzdata.get_url("nybb")
     assert (
         url
-        == "https://data.cityofnewyork.us/api/geospatial/tqmj-j8zm?method=export&format=Original"
+        == "https://data.cityofnewyork.us/api/geospatial/tqmj-j8zm?method=export&format=Original"  # noqa
     )
 
 
