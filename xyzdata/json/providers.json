@@ -21,7 +21,7 @@
             "nrows": 90,
             "ncols": 23,
             "details": "https://geodacenter.github.io/data-and-lab//atlanta_old/",
-            "hash": "missing",
+            "hash": "a33a76e12168fe84361e60c88a9df4856730487305846c559715c89b1a2b5e09",
             "filename": "atlanta_hom.zip"
         },
         "baltimore": {
@@ -33,7 +33,7 @@
             "nrows": 211,
             "ncols": 17,
             "details": "https://geodacenter.github.io/data-and-lab//baltim/",
-            "hash": "missing",
+            "hash": "23f04f479026f33565fb84802f19c4142a5287c0a20072cb2ac1d3c145677b2c",
             "filename": "baltimore.zip"
         },
         "bostonhsg": {
@@ -45,7 +45,7 @@
             "nrows": 506,
             "ncols": 23,
             "details": "https://geodacenter.github.io/data-and-lab//boston-housing/",
-            "hash": "missing",
+            "hash": "ee6c3138e3b3f1989a7a28edb8a98eb4a5fa2835ee2d45d9bf4d5cd4ebbe76c7",
             "filename": "boston.zip"
         },
         "buenosaires": {
@@ -57,7 +57,7 @@
             "nrows": 209,
             "ncols": 21,
             "details": "https://geodacenter.github.io/data-and-lab//buenos-aires_old/",
-            "hash": "missing",
+            "hash": "d011ba3d082eef8a0d694b14b4cef41546766621ae6aff1ce536d0a4f62e589e",
             "filename": "buenosaires.zip"
         },
         "cars": {
@@ -69,7 +69,7 @@
             "nrows": 137867,
             "ncols": 21,
             "details": "https://geodacenter.github.io/data-and-lab//1-source-and-description/",
-            "hash": "missing",
+            "hash": "6a0b23bc7eda2dcf1af02d43ccf506b24ca8d8c6dc2fe86a2a1cc051b03aae9e",
             "filename": "Abandoned_Vehicles_Map.csv"
         },
         "charleston1": {
@@ -81,7 +81,7 @@
             "nrows": 117,
             "ncols": 30,
             "details": "https://geodacenter.github.io/data-and-lab//charleston-1_old/",
-            "hash": "missing",
+            "hash": "4a4fa9c8dd4231ae0b2f12f24895b8336bcab0c28c48653a967cffe011f63a7c",
             "filename": "CharlestonMSA.zip"
         },
         "charleston2": {
@@ -93,7 +93,7 @@
             "nrows": 44,
             "ncols": 97,
             "details": "https://geodacenter.github.io/data-and-lab//charleston2/",
-            "hash": "missing",
+            "hash": "056d5d6e236b5bd95f5aee26c77bbe7d61bd07db5aaf72866c2f545205c1d8d7",
             "filename": "CharlestonMSA2.zip"
         },
         "chicago_health": {
@@ -105,7 +105,7 @@
             "nrows": 77,
             "ncols": 86,
             "details": "https://geodacenter.github.io/data-and-lab//comarea_vars/",
-            "hash": "missing",
+            "hash": "4e872adb552786eae2fcd745524696e5e4cd33cc9a6c032471c0e75328871401",
             "filename": "comarea.zip"
         },
         "chicago_commpop": {
@@ -117,7 +117,7 @@
             "nrows": 77,
             "ncols": 8,
             "details": "https://geodacenter.github.io/data-and-lab//commpop/",
-            "hash": "missing",
+            "hash": "1dbebb50c8ea47e2279ea819ef64ba793bdee2b88e4716bd6c6ec0e0d8e0e05b",
             "filename": "chicago_commpop.zip"
         },
         "chicago_parcels": {
@@ -129,7 +129,7 @@
             "nrows": 592521,
             "ncols": 5,
             "details": "https://geodacenter.github.io/data-and-lab//parcels/",
-            "hash": "missing",
+            "hash": "71c9f210a4097e480a0113e610c3c0d707c4b373bb34fc85f139c6a9b5c2639a",
             "filename": "chicago_parcels.zip"
         },
         "chile_labor": {
@@ -141,7 +141,7 @@
             "nrows": 141,
             "ncols": 62,
             "details": "https://geodacenter.github.io/data-and-lab//FLMA/",
-            "hash": "missing",
+            "hash": "4777072268d0127b3d0be774f51d0f66c15885e9d3c92bc72c641a72f220796c",
             "filename": "flma.zip"
         },
         "chile_migration": {
@@ -153,7 +153,7 @@
             "nrows": 304,
             "ncols": 10,
             "details": "https://geodacenter.github.io/data-and-lab//CHIM/",
-            "hash": "missing",
+            "hash": "56c59771724e090a5b1da649c8b7128817e940179bce96c510321992cca72bf6",
             "filename": "CHIM.zip"
         },
         "cincinnati": {
@@ -165,7 +165,7 @@
             "nrows": 457,
             "ncols": 89,
             "details": "https://geodacenter.github.io/data-and-lab//walnut_hills/",
-            "hash": "missing",
+            "hash": "d6871dd688bd14cf4710a218d721d34f6574456f2a14d5c5cfe5a92054ee9763",
             "filename": "walnuthills_updated.zip"
         },
         "cleveland": {
@@ -177,7 +177,7 @@
             "nrows": 205,
             "ncols": 9,
             "details": "https://geodacenter.github.io/data-and-lab//clev_sls_154_core/",
-            "hash": "missing",
+            "hash": "49aeba03eb06bf9b0d9cddd6507eb4a226b7c7a7561145562885c5cddfaeaadf",
             "filename": "cleveland.zip"
         },
         "columbus": {
@@ -189,7 +189,7 @@
             "nrows": 49,
             "ncols": 20,
             "details": "https://geodacenter.github.io/data-and-lab//columbus/",
-            "hash": "missing",
+            "hash": "cf3bde1a32b31c48a63bc513587a1f8d310ecae5de9cae460dc9e66fe5a65e4d",
             "filename": "columbus.zip"
         },
         "elections": {
@@ -201,7 +201,7 @@
             "nrows": 3108,
             "ncols": 74,
             "details": "https://geodacenter.github.io/data-and-lab//county_election_2012_2016-variables/",
-            "hash": "missing",
+            "hash": "5c5b17f5b1747065340eae16f67819276851cacd52fda80a22be119f65ad5ebe",
             "filename": "election.zip"
         },
         "grid100": {
@@ -213,7 +213,7 @@
             "nrows": 100,
             "ncols": 34,
             "details": "https://geodacenter.github.io/data-and-lab//grid100/",
-            "hash": "missing",
+            "hash": "5702ba39606044f71d53ae6a83758b81332bd3aa216b7b7b6e1c60dd0e72f476",
             "filename": "grid100.zip"
         },
         "groceries": {
@@ -225,7 +225,7 @@
             "nrows": 148,
             "ncols": 7,
             "details": "https://geodacenter.github.io/data-and-lab//chicago_sup_vars/",
-            "hash": "missing",
+            "hash": "ead10e53b21efcaa29b798428b93ba2a1c0ba1b28f046265c1737712fa83f88a",
             "filename": "grocery.zip"
         },
         "guerry": {
@@ -237,7 +237,7 @@
             "nrows": 85,
             "ncols": 23,
             "details": "https://geodacenter.github.io/data-and-lab//Guerry/",
-            "hash": "missing",
+            "hash": "80d2b355ad3340fcffa0a28e5cec0698af01067f8059b1a60388d200a653b3e8",
             "filename": "guerry.zip"
         },
         "health+": {
@@ -249,7 +249,7 @@
             "nrows": 3984,
             "ncols": 64,
             "details": "https://geodacenter.github.io/data-and-lab//co_income_diversity_variables/",
-            "hash": "missing",
+            "hash": "eafee1063040258bc080e7b501bdf1438d6e45ba208954d8c2e1a7562142d0a7",
             "filename": "income_diversity.zip"
         },
         "health_indicators": {
@@ -261,7 +261,7 @@
             "nrows": 77,
             "ncols": 31,
             "details": "https://geodacenter.github.io/data-and-lab//healthindicators-variables/",
-            "hash": "missing",
+            "hash": "b43683245f8fc3b4ab69ffa75d2064920a1a91dc76b9dcc08e288765ba0c94f3",
             "filename": "healthIndicators.zip"
         },
         "hickory1": {
@@ -273,7 +273,7 @@
             "nrows": 68,
             "ncols": 30,
             "details": "https://geodacenter.github.io/data-and-lab//hickory1/",
-            "hash": "missing",
+            "hash": "4c0804608d303e6e44d51966bb8927b1f5f9e060a9b91055a66478b9039d2b44",
             "filename": "HickoryMSA.zip"
         },
         "hickory2": {
@@ -285,7 +285,7 @@
             "nrows": 29,
             "ncols": 55,
             "details": "https://geodacenter.github.io/data-and-lab//hickory2/",
-            "hash": "missing",
+            "hash": "5e9498e1ff036297c3eea3cc42ac31501680a43b50c71b486799ef9021679d07",
             "filename": "HickoryMSA2.zip"
         },
         "home_sales": {
@@ -297,7 +297,7 @@
             "nrows": 21613,
             "ncols": 21,
             "details": "https://geodacenter.github.io/data-and-lab//KingCounty-HouseSales2015/",
-            "hash": "missing",
+            "hash": "b979f0eb2cef6ebd2c761d552821353f795635eb8db53a95f2815fc46e1f644c",
             "filename": "kingcounty.zip"
         },
         "houston": {
@@ -309,7 +309,7 @@
             "nrows": 52,
             "ncols": 23,
             "details": "https://geodacenter.github.io/data-and-lab//houston/",
-            "hash": "missing",
+            "hash": "d3167fd150a1369d9a32b892d3b2a8747043d3d382c3dd81e51f696b191d0d15",
             "filename": "houston_hom.zip"
         },
         "juvenile": {
@@ -321,7 +321,7 @@
             "nrows": 168,
             "ncols": 3,
             "details": "https://geodacenter.github.io/data-and-lab//juvenile/",
-            "hash": "missing",
+            "hash": "811cfcfa613578214d907bfbdd396c6e02261e5cda6d56b25a6f961148de961c",
             "filename": "juvenile.zip"
         },
         "lansing1": {
@@ -333,7 +333,7 @@
             "nrows": 117,
             "ncols": 30,
             "details": "https://geodacenter.github.io/data-and-lab//lansing1/",
-            "hash": "missing",
+            "hash": "724ce3d889fa50e7632d16200cf588d40168d49adaf5bca45049dc1b3758bde1",
             "filename": "LansingMSA.zip"
         },
         "lansing2": {
@@ -345,7 +345,7 @@
             "nrows": 46,
             "ncols": 55,
             "details": "https://geodacenter.github.io/data-and-lab//lansing2/",
-            "hash": "missing",
+            "hash": "7657c05d3bd6090c4d5914cfe5aaf01f694601c1e0c29bc3ecbe9bc523662303",
             "filename": "LansingMSA2.zip"
         },
         "laozone": {
@@ -357,7 +357,7 @@
             "nrows": 32,
             "ncols": 8,
             "details": "https://geodacenter.github.io/data-and-lab//ozone/",
-            "hash": "missing",
+            "hash": "30be6daa3b0fc86940bec9758c2ba626c2c98b11b33d55cef23bd094192c9f8b",
             "filename": "laozone.zip"
         },
         "lasrosas": {
@@ -369,7 +369,7 @@
             "nrows": 1738,
             "ncols": 34,
             "details": "https://geodacenter.github.io/data-and-lab//lasrosas/",
-            "hash": "missing",
+            "hash": "038d0e82203f2875b50499dbd8498ca9c762ebd8003b2f2203ebc6acada8f8fd",
             "filename": "lasrosas.zip"
         },
         "liquor_stores": {
@@ -381,7 +381,7 @@
             "nrows": 571,
             "ncols": 2,
             "details": "https://geodacenter.github.io/data-and-lab//liq_chicago/",
-            "hash": "missing",
+            "hash": "6a483a6a7066a000bc97bfe71596cf28834d3088fbc958455b903a0938b3b530",
             "filename": "liquor.zip"
         },
         "malaria": {
@@ -393,7 +393,7 @@
             "nrows": 1068,
             "ncols": 50,
             "details": "https://geodacenter.github.io/data-and-lab//colomb_malaria/",
-            "hash": "missing",
+            "hash": "ca77477656829833a4e3e384b02439632fa28bb577610fe5aef9e0b094c41a95",
             "filename": "malariacolomb.zip"
         },
         "milwaukee1": {
@@ -405,7 +405,7 @@
             "nrows": 417,
             "ncols": 31,
             "details": "https://geodacenter.github.io/data-and-lab//milwaukee1/",
-            "hash": "missing",
+            "hash": "bf3c9617c872db26ea56f20e82a449f18bb04d8fb76a653a2d3842d465bc122c",
             "filename": "MilwaukeeMSA.zip"
         },
         "milwaukee2": {
@@ -417,7 +417,7 @@
             "nrows": 83,
             "ncols": 55,
             "details": "https://geodacenter.github.io/data-and-lab//milwaukee2/",
-            "hash": "missing",
+            "hash": "7f74212d63addb9ab84fac9447ee898498c8fafc284edcffe1f1ac79c2175d60",
             "filename": "MilwaukeeMSA2.zip"
         },
         "ncovr": {
@@ -429,7 +429,7 @@
             "nrows": 3085,
             "ncols": 69,
             "details": "https://geodacenter.github.io/data-and-lab//ncovr/",
-            "hash": "missing",
+            "hash": "e8cb04e6da634c6cd21808bd8cfe4dad6e295b22e8d40cc628e666887719cfe9",
             "filename": "ncovr.zip"
         },
         "natregimes": {
@@ -441,7 +441,7 @@
             "nrows": 3085,
             "ncols": 73,
             "details": "https://geodacenter.github.io/data-and-lab//natregimes/",
-            "hash": "missing",
+            "hash": "431d0d95ffa000692da9319e6bd28701b1156f7b8e716d4bfcd1e09b6e357918",
             "filename": "natregimes.zip"
         },
         "ndvi": {
@@ -453,7 +453,7 @@
             "nrows": 49,
             "ncols": 5,
             "details": "https://geodacenter.github.io/data-and-lab//ndvi/",
-            "hash": "missing",
+            "hash": "a89459e50a4495c24ead1d284930467ed10eb94829de16a693a9fa89dea2fe22",
             "filename": "ndvi.zip"
         },
         "nepal": {
@@ -465,7 +465,7 @@
             "nrows": 75,
             "ncols": 61,
             "details": "https://geodacenter.github.io/data-and-lab//nepal/",
-            "hash": "missing",
+            "hash": "d7916568fe49ff258d0f03ac115e68f64cdac572a9fd2b29de2d70554ac2b20d",
             "filename": "nepal.zip"
         },
         "nyc": {
@@ -477,7 +477,7 @@
             "nrows": 55,
             "ncols": 34,
             "details": "https://geodacenter.github.io/data-and-lab//nyc/",
-            "hash": "missing",
+            "hash": "a67dff2f9e6da9e11737e6be5a16e1bc33954e2c954332d68bcbf6ff7203702b",
             "filename": "nyc.zip"
         },
         "nyc_earnings": {
@@ -489,7 +489,7 @@
             "nrows": 108487,
             "ncols": 70,
             "details": "https://geodacenter.github.io/data-and-lab//LEHD_Data/",
-            "hash": "missing",
+            "hash": "771fe11e59a16d4c15c6471d9a81df5e9c9bda5ef0a207e77d8ff21b2c16891b",
             "filename": "lehd.zip"
         },
         "nyc_education": {
@@ -501,7 +501,7 @@
             "nrows": 2216,
             "ncols": 56,
             "details": "https://geodacenter.github.io/data-and-lab//NYC-Census-2000/",
-            "hash": "missing",
+            "hash": "ecdf342654415107911291a8076c1685bd2c8a08d8eaed3ce9c3e9401ef714f2",
             "filename": "nyc_2000Census.zip"
         },
         "nyc_neighborhoods": {
@@ -513,7 +513,7 @@
             "nrows": 195,
             "ncols": 98,
             "details": "https://geodacenter.github.io/data-and-lab//NYC-Nhood-ACS-2008-12/",
-            "hash": "missing",
+            "hash": "aeb75fc5c95fae1088093827fca69928cee3ad27039441bb35c03013d2ee403f",
             "filename": "nycnhood_acs.zip"
         },
         "nyc_socio-demographics": {
@@ -525,7 +525,7 @@
             "nrows": 2166,
             "ncols": 113,
             "details": "https://geodacenter.github.io/data-and-lab//NYC_Tract_ACS2008_12/",
-            "hash": "missing",
+            "hash": "29b6a2996eb54406654548312a630078d3c20d6dcbec74a5ce3c2ef88d3dbfdd",
             "filename": "nyctract_acs.zip"
         },
         "ohiolung": {
@@ -537,7 +537,7 @@
             "nrows": 88,
             "ncols": 42,
             "details": "https://geodacenter.github.io/data-and-lab//ohiolung/",
-            "hash": "missing",
+            "hash": "17de18e955de3b4a3c0a2241f0074074bf2979ce3dfd6ba4c8f3b8cb07a3244c",
             "filename": "ohiolung.zip"
         },
         "orlando1": {
@@ -549,7 +549,7 @@
             "nrows": 328,
             "ncols": 30,
             "details": "https://geodacenter.github.io/data-and-lab//orlando1/",
-            "hash": "missing",
+            "hash": "e98ea5b9ffaf3e421ed437f665c739d1e92d9908e2b121c75ac02ecf7de2e254",
             "filename": "OrlandoMSA.zip"
         },
         "orlando2": {
@@ -561,7 +561,7 @@
             "nrows": 94,
             "ncols": 59,
             "details": "https://geodacenter.github.io/data-and-lab//orlando2/",
-            "hash": "missing",
+            "hash": "4cd8c3469cb7edea5f0fb615026192e12b1d4b50c22b28345adf476bc85d0f03",
             "filename": "OrlandoMSA2.zip"
         },
         "oz9799": {
@@ -573,7 +573,7 @@
             "nrows": 30,
             "ncols": 78,
             "details": "https://geodacenter.github.io/data-and-lab//oz96/",
-            "hash": "missing",
+            "hash": "1ecc7c46f5f42af6057dedc1b73f56b576cb9716d2c08d23cba98f639dfddb82",
             "filename": "oz9799.zip"
         },
         "phoenix_acs": {
@@ -585,7 +585,7 @@
             "nrows": 685,
             "ncols": 17,
             "details": "https://geodacenter.github.io/data-and-lab//phx/",
-            "hash": "missing",
+            "hash": "b2f6e196bacb6f3fe1fc909af482e7e75b83d1f8363fc73038286364c13334ee",
             "filename": "phx2.zip"
         },
         "pittsburgh": {
@@ -597,7 +597,7 @@
             "nrows": 143,
             "ncols": 8,
             "details": "https://geodacenter.github.io/data-and-lab//pitt93/",
-            "hash": "missing",
+            "hash": "43ac971cf9fe53f95f843317741040e472ebe129fa134f4392f02b93ab5d7d4d",
             "filename": "pittsburgh.zip"
         },
         "police": {
@@ -609,7 +609,7 @@
             "nrows": 82,
             "ncols": 21,
             "details": "https://geodacenter.github.io/data-and-lab//police/",
-            "hash": "missing",
+            "hash": "596270d62dea8207001da84883ac265591e5de053f981c7491e7b5c738e9e9ff",
             "filename": "police.zip"
         },
         "sacramento1": {
@@ -621,7 +621,7 @@
             "nrows": 403,
             "ncols": 30,
             "details": "https://geodacenter.github.io/data-and-lab//sacramento1/",
-            "hash": "missing",
+            "hash": "72ddeb533cf2917dc1f458add7c6042b93c79b31316ae2d22f1c855a9da275f9",
             "filename": "sacramento.zip"
         },
         "sacramento2": {
@@ -633,7 +633,7 @@
             "nrows": 125,
             "ncols": 53,
             "details": "https://geodacenter.github.io/data-and-lab//sacramento2/",
-            "hash": "missing",
+            "hash": "3f6899efd371804ea8bfaf3cdfd3ed4753ea4d009fed38a57c5bbf442ab9468b",
             "filename": "SacramentoMSA2.zip"
         },
         "sanfran_crime": {
@@ -645,7 +645,7 @@
             "nrows": 3384,
             "ncols": 13,
             "details": "https://geodacenter.github.io/data-and-lab//SFcrimes_vars/",
-            "hash": "missing",
+            "hash": "a3cb7ac51875914389bee73aca6815244fca1d2461f97ef7b03f2ee9f66df74b",
             "filename": "SFCrime_July_Dec2012.zip"
         },
         "savannah1": {
@@ -657,7 +657,7 @@
             "nrows": 77,
             "ncols": 30,
             "details": "https://geodacenter.github.io/data-and-lab//savannah1/",
-            "hash": "missing",
+            "hash": "df48c228776d2122c38935b2ebbf4cbb90c0bacc68df01161e653aab960e4208",
             "filename": "SavannahMSA.zip"
         },
         "savannah2": {
@@ -669,7 +669,7 @@
             "nrows": 24,
             "ncols": 55,
             "details": "https://geodacenter.github.io/data-and-lab//savannah2/",
-            "hash": "missing",
+            "hash": "5b22b84a8665434cb91e800a039337f028b888082b8ef7a26d77eb6cc9aea8c1",
             "filename": "SavannahMSA2.zip"
         },
         "scotlip": {
@@ -681,7 +681,7 @@
             "nrows": 56,
             "ncols": 11,
             "details": "https://geodacenter.github.io/data-and-lab//scotlip/",
-            "hash": "missing",
+            "hash": "b83e23d6ec294d6ca53f36f85f1dfb335ce1cb5bf4b85892b48072415cac0e83",
             "filename": "scotlip.zip"
         },
         "seattle1": {
@@ -693,7 +693,7 @@
             "nrows": 664,
             "ncols": 30,
             "details": "https://geodacenter.github.io/data-and-lab//seattle1/",
-            "hash": "missing",
+            "hash": "46fb75a30f0e7963e6108bdb19af4d7db4c72c3d5a020025cafa528c96e09daa",
             "filename": "SeattleMSA.zip"
         },
         "seattle2": {
@@ -705,7 +705,7 @@
             "nrows": 145,
             "ncols": 59,
             "details": "https://geodacenter.github.io/data-and-lab//seattle2/",
-            "hash": "missing",
+            "hash": "3dac2fa5b8c8dfa9dd5273a85de7281e06e18ab4f197925607f815f4e44e4d0c",
             "filename": "SeattleMSA2.zip"
         },
         "sids": {
@@ -717,7 +717,7 @@
             "nrows": 100,
             "ncols": 13,
             "details": "https://geodacenter.github.io/data-and-lab//sids/",
-            "hash": "missing",
+            "hash": "e2f7b210b9a57839423fd170e47c02cf7a2602a480a1036bb0324e1112a4eaab",
             "filename": "sids.zip"
         },
         "sids2": {
@@ -729,7 +729,7 @@
             "nrows": 100,
             "ncols": 17,
             "details": "https://geodacenter.github.io/data-and-lab//sids2/",
-            "hash": "missing",
+            "hash": "b5875ffbdb261e6fa75dc4580d67111ef1434203f2d6a5d63ffac16db3a14bd0",
             "filename": "sids2.zip"
         },
         "snow": {
@@ -741,7 +741,7 @@
             "nrows": "missing",
             "ncols": "missing",
             "details": "https://geodacenter.github.io/data-and-lab//snow/",
-            "hash": "missing",
+            "hash": "d974dbe3c16a31459e213556f4e4c5e3494db620615aa624104582cde0e2d83c",
             "filename": "snow.zip"
         },
         "south": {
@@ -753,7 +753,7 @@
             "nrows": 1412,
             "ncols": 69,
             "details": "https://geodacenter.github.io/data-and-lab//south/",
-            "hash": "missing",
+            "hash": "8f151d99c643b187aad37cfb5c3212353e1bc82804a4399a63de369490e56a7a",
             "filename": "south.zip"
         },
         "spirals": {
@@ -765,7 +765,7 @@
             "nrows": 301,
             "ncols": 2,
             "details": "https://geodacenter.github.io/data-and-lab//spirals/",
-            "hash": "missing",
+            "hash": "3203b0a6db37c1207b0f1727c980814f541ce0a222597475f9c91540b1d372f1",
             "filename": "spirals.csv"
         },
         "stlouis": {
@@ -777,7 +777,7 @@
             "nrows": 78,
             "ncols": 23,
             "details": "https://geodacenter.github.io/data-and-lab//stlouis/",
-            "hash": "missing",
+            "hash": "181a17a12e9a2b2bfc9013f399e149da935e0d5cb95c3595128f67898c4365f3",
             "filename": "stlouis.zip"
         },
         "tampa1": {
@@ -789,7 +789,7 @@
             "nrows": 547,
             "ncols": 30,
             "details": "https://geodacenter.github.io/data-and-lab//tampa1/",
-            "hash": "missing",
+            "hash": "9a7ea0746138f62aa589e8377edafea48a7b1be0cdca2b38798ba21665bfb463",
             "filename": "TampaMSA.zip"
         },
         "us_sdoh": {
@@ -801,7 +801,7 @@
             "nrows": 71901,
             "ncols": 25,
             "details": "https://geodacenter.github.io/data-and-lab//us-sdoh/",
-            "hash": "missing",
+            "hash": "076701725c4b67248f79c8b8a40e74f9ad9e194d3237e1858b3d20176a6562a5",
             "filename": "us-sdoh-2014.zip"
         }
     },
