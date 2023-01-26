@@ -1,4 +1,4 @@
-name: Publish xyzservices to PyPI / GitHub
+name: Publish geodatasets to PyPI / GitHub
 
 on:
   push:
@@ -7,12 +7,12 @@ on:
 
 jobs:
   build-n-publish:
-    name: Build and publish xyzservices to PyPI
+    name: Build and publish geodatasets to PyPI
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout source
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -21,9 +21,8 @@ jobs:
 
       - name: Build a binary wheel and a source tarball
         run: |
-          python -m pip install --upgrade pip
-          pip install setuptools wheel
-          python setup.py sdist bdist_wheel
+          python -m pip install --upgrade build
+          python -m build
 
       - name: Publish distribution to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
