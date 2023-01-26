@@ -2,9 +2,25 @@
 
 Fetch links or download and cache spatial data example files.
 
+The `geodatasets` contains an API on top of a JSON with metadata of externally hosted
+datasets containing geospatial information useful for illustrative and educational
+purposes.
+
 ## Install
 
-While in the development, use `pip` from GitHub.
+From PyPI:
+
+```sh
+pip install geodatasets
+```
+
+or using `conda` or `mamba` from conda-forge:
+
+```sh
+conda install geodatasets -c conda-forge
+```
+
+The development version can be installed using `pip` from GitHub.
 
 ```sh
 pip install git+https://github.com/geopandas/geodatasets.git
