@@ -43,3 +43,8 @@ myModule = ["json/providers.json"]
 
 [tool.coverage.run]
 omit = ["geodatasets/tests/*"]
+
+[tool.pytest.ini_options]
+markers = [
+    "request: fetching data from remote server",
+]
