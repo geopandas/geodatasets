@@ -7,7 +7,7 @@ Fetch links or download and cache spatial data example files.
 While in the development, use `pip` from GitHub.
 
 ```sh
-pip install git+https://github.com/martinfleis/geodatasets.git
+pip install git+https://github.com/geopandas/geodatasets.git
 ```
 
 ## How to use

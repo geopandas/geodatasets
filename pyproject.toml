@@ -29,8 +29,8 @@ dependencies = [
 ]
 
 [project.urls]
-Home = "https://github.com/martinfleis/geodatasets"
-Repository = "https://github.com/martinfleis/geodatasets"
+Home = "https://github.com/geopandas/geodatasets"
+Repository = "https://github.com/geopandas/geodatasets"
 
 [tool.setuptools.packages.find]
 include = [
