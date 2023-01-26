@@ -11,7 +11,7 @@ contributions to the codebase and documentation.
 If you want to add a new dataset, simply add its details to
 `geodatasets/json/database.json`.
 
-You can add a single `DataItem` or a `Bunch` of `DataItem`s. Use the following
+You can add a single `Dataset` or a `Bunch` of `Dataset`s. Use the following
 schema to add a single dataset:
 
 ```json

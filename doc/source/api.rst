@@ -27,7 +27,7 @@ Database-level API
 
 The database of dataset metadata is handled via custom dict-based classes.
 
-.. class:: DataItem
+.. class:: Dataset
 
    A dict with attribute-access and that can be called to update keys.
 

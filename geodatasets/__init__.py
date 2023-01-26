@@ -1,6 +1,6 @@
 from .api import get_path, get_url, fetch  # noqa
 from .data import data  # noqa
-from .lib import Bunch, DataItem  # noqa
+from .lib import Bunch, Dataset  # noqa
 
 from importlib.metadata import PackageNotFoundError, version
 

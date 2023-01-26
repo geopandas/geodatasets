@@ -15,7 +15,7 @@ QUERY_NAME_TRANSLATION = str.maketrans({x: "" for x in "., -_/"})
 class Bunch(dict):
     """A dict with attribute-access
 
-    :class:`Bunch` is used to store :class:`DataItem` objects.
+    :class:`Bunch` is used to store :class:`Dataset` objects.
     """
 
     def __getattr__(self, key):
@@ -31,8 +31,8 @@ class Bunch(dict):
 
         children = ""
         for key in self.keys():
-            if isinstance(self[key], DataItem):
-                obj = "geodatasets.DataItem"
+            if isinstance(self[key], Dataset):
+                obj = "geodatasets.Dataset"
             else:
                 obj = "geodatasets.Bunch"
             uid = str(uuid.uuid4())
@@ -69,19 +69,19 @@ class Bunch(dict):
     def flatten(self) -> dict:
         """Return the nested :class:`Bunch` collapsed into the one level dictionary.
 
-        Dictionary keys are :class:`DataItem` names (e.g. ``geoda.airbnb``)
-        and its values are :class:`DataItem` objects.
+        Dictionary keys are :class:`Dataset` names (e.g. ``geoda.airbnb``)
+        and its values are :class:`Dataset` objects.
 
         Returns
         -------
         flattened : dict
-            dictionary of :class:`DataItem` objects
+            dictionary of :class:`Dataset` objects
         """
 
         flat = {}
 
         def _get_items(item):
-            if isinstance(item, DataItem):
+            if isinstance(item, Dataset):
                 flat[item.name] = item
             else:
                 for prov in item.values():
@@ -91,10 +91,10 @@ class Bunch(dict):
 
         return flat
 
-    def query_name(self, name: str) -> DataItem:
-        """Return :class:`DataItem` based on the name query
+    def query_name(self, name: str) -> Dataset:
+        """Return :class:`Dataset` based on the name query
 
-        Returns a matching :class:`DataItem` from the :class:`Bunch` if the ``name``
+        Returns a matching :class:`Dataset` from the :class:`Bunch` if the ``name``
         contains the same letters in the same order as the item's name irrespective
         of the letter case, spaces, dashes and other characters.
         See examples for details.
@@ -106,7 +106,7 @@ class Bunch(dict):
 
         Returns
         -------
-        match: DataItem
+        match: Dataset
         """
         xyz_flat_lower = {
             k.translate(QUERY_NAME_TRANSLATION).lower(): v
@@ -119,7 +119,7 @@ class Bunch(dict):
         raise ValueError(f"No matching item found for the query '{name}'.")
 
 
-class DataItem(Bunch):
+class Dataset(Bunch):
     """
     A dict with attribute-access and that
     can be called to update keys
@@ -136,18 +136,18 @@ class DataItem(Bunch):
             msg = (
                 f"The attributes {required} "
                 f"are required to initialise "
-                f"a `DataItem`. Please provide values for: "
+                f"a `Dataset`. Please provide values for: "
                 f'`{"`, `".join(missing)}`'
             )
             raise AttributeError(msg)
 
-    def __call__(self, **kwargs) -> DataItem:
-        new = DataItem(self)  # takes a copy preserving the class
+    def __call__(self, **kwargs) -> Dataset:
+        new = Dataset(self)  # takes a copy preserving the class
         new.update(kwargs)
         return new
 
-    def copy(self, **kwargs) -> DataItem:
-        new = DataItem(self)  # takes a copy preserving the class
+    def copy(self, **kwargs) -> Dataset:
+        new = Dataset(self)  # takes a copy preserving the class
         return new
 
     def _repr_html_(self, inside=False):
@@ -162,7 +162,7 @@ class DataItem(Bunch):
         {style}
             <div class="xyz-wrap">
                 <div class="xyz-header">
-                    <div class="xyz-obj">geodatasets.DataItem</div>
+                    <div class="xyz-obj">geodatasets.Dataset</div>
                     <div class="xyz-name">{self.name}</div>
                 </div>
                 <div class="xyz-details">
@@ -187,9 +187,9 @@ def _load_json(f):
         item = data[item_name]
 
         if "url" in item.keys():
-            items[item_name] = DataItem(item)
+            items[item_name] = Dataset(item)
         else:
-            items[item_name] = Bunch({i: DataItem(item[i]) for i in item})
+            items[item_name] = Bunch({i: Dataset(item[i]) for i in item})
 
     return items
 
