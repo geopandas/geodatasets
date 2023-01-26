@@ -1,13 +1,13 @@
 import pytest
 
-from xyzdata import Bunch, DataItem, data
+from geodatasets import Bunch, DataItem, data
 
 
 @pytest.fixture
 def data1():
     return DataItem(
         url="https://myserver.com/data.zip",
-        attribution="(C) xyzdata",
+        attribution="(C) geodatasets",
         name="my_public_data",
         filename="data.zip",
         hash="qwertyuiopasdfghjklzxcvbnm1234567890",
@@ -18,7 +18,7 @@ def data1():
 def data2():
     return DataItem(
         url="https://myserver.com/?dghrtnkmjnkju",
-        attribution="(C) xyzdata",
+        attribution="(C) geodatasets",
         name="my_public_data2",
         filename="data2.json",
         hash="qwertyuiopasdfghjklzxcvbnm1234567890",
@@ -54,12 +54,12 @@ def test_html_repr(data1, data2):
     item_strings = [
         '<div class="xyz-wrap">',
         '<div class="xyz-header">',
-        '<div class="xyz-obj">xyzdata.DataItem</div>',
+        '<div class="xyz-obj">geodatasets.DataItem</div>',
         '<div class="xyz-name">my_public_data</div>',
         '<div class="xyz-details">',
         '<dl class="xyz-attrs">',
         "<dt><span>url</span></dt><dd>https://myserver.com/data.zip</dd>",
-        "<dt><span>attribution</span></dt><dd>(C) xyzdata</dd>",
+        "<dt><span>attribution</span></dt><dd>(C) geodatasets</dd>",
     ]
 
     for html_string in item_strings:
@@ -73,11 +73,11 @@ def test_html_repr(data1, data2):
     )
 
     bunch_strings = [
-        '<div class="xyz-obj">xyzdata.Bunch</div>',
+        '<div class="xyz-obj">geodatasets.Bunch</div>',
         '<div class="xyz-name">2 items</div>',
         '<ul class="xyz-collapsible">',
         '<li class="xyz-child">',
-        "<span>xyzdata.DataItem</span>",
+        "<span>geodatasets.DataItem</span>",
         '<div class="xyz-inside">',
     ]
 

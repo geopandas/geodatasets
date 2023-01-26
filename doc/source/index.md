@@ -9,5 +9,5 @@ hidden: true
 ---
 api
 contributing
-GitHub <https://github.com/martinfleis/xyzdata>
+GitHub <https://github.com/martinfleis/geodatasets>
 ```

@@ -5,13 +5,13 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools_scm]
 
 [project]
-name = "xyzdata"
+name = "geodatasets"
 dynamic = ["version"]
 authors = [
     {name = "Martin Fleischmann", email = "martin@martinfleischmann.net"},
 ]
 maintainers = [
-    {name = "xyzdata contributors"},
+    {name = "geodatasets contributors"},
 ]
 license = {text = "-Clause BSD"}
 description = "Spatial data examples"
@@ -29,17 +29,17 @@ dependencies = [
 ]
 
 [project.urls]
-Home = "https://github.com/martinfleis/xyzdata"
-Repository = "https://github.com/martinfleis/xyzdata"
+Home = "https://github.com/martinfleis/geodatasets"
+Repository = "https://github.com/martinfleis/geodatasets"
 
 [tool.setuptools.packages.find]
 include = [
-    "xyzdata",
-    "xyzdata.*",
+    "geodatasets",
+    "geodatasets.*",
 ]
 
 [tool.setuptools.package-data]
 myModule = ["json/providers.json"]
 
 [tool.coverage.run]
-omit = ["xyzdata/tests/*"]
+omit = ["geodatasets/tests/*"]

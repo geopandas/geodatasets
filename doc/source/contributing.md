@@ -1,6 +1,6 @@
-# Contributing to `xyzdata`
+# Contributing to `geodatasets`
 
-Contributions to `xyzdata` are very welcome. They are likely to be accepted more
+Contributions to `geodatasets` are very welcome. They are likely to be accepted more
 quickly if they follow these guidelines.
 
 There are two main groups of contributions - adding new data sources and
@@ -9,7 +9,7 @@ contributions to the codebase and documentation.
 ## Data sources
 
 If you want to add a new dataset, simply add its details to
-`xyzdata/json/database.json`.
+`geodatasets/json/database.json`.
 
 You can add a single `DataItem` or a `Bunch` of `DataItem`s. Use the following
 schema to add a single dataset:
@@ -72,10 +72,10 @@ suffix. Don't forget to add any other custom attributes you'd like.
 
 ## Code and documentation
 
-At this stage of `xyzdata` development, the priorities are to define a simple,
+At this stage of `geodatasets` development, the priorities are to define a simple,
 usable, and stable API and to have clean, maintainable, readable code.
 
-In general, `xyzdata` follows the conventions of the GeoPandas project where
+In general, `geodatasets` follows the conventions of the GeoPandas project where
 applicable.
 
 In particular, when submitting a pull request:
@@ -95,8 +95,8 @@ In particular, when submitting a pull request:
   throughout the project. For more details see the [GeoPandas contributing
   guide](https://geopandas.readthedocs.io/en/latest/community/contributing.html).
 - Imports should be grouped with standard library imports first, 3rd-party libraries
-  next, and `xyzdata` imports third. Within each grouping, imports should be
+  next, and `geodatasets` imports third. Within each grouping, imports should be
   alphabetized. Always use absolute imports when possible, and explicit relative imports
   for local imports when necessary in tests.
-- `xyzdata` supports Python 3.7+ only. When possible, do not introduce additional
+- `geodatasets` supports Python 3.7+ only. When possible, do not introduce additional
   dependencies. If that is necessary, make sure they can be treated as optional.

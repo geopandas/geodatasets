@@ -8,14 +8,14 @@ registry = {value["filename"]: value["hash"] for value in flat.values()}
 urls = {value["filename"]: value["url"] for value in flat.values()}
 
 CACHE = pooch.create(
-    path=pooch.os_cache("xyzdata"), base_url="", registry=registry, urls=urls
+    path=pooch.os_cache("geodatasets"), base_url="", registry=registry, urls=urls
 )
 
 
 def get_url(name):
     """Get the URL from which the dataset can be fetched.
 
-    ``name`` is queried using :meth:`~xyzdata.Bunch.query_name`, so it only needs to
+    ``name`` is queried using :meth:`~geodatasets.Bunch.query_name`, so it only needs to
     contain the same letters in the same order as the item's name irrespective
     of the letter case, spaces, dashes and other characters.
 
@@ -37,10 +37,10 @@ def get_url(name):
 
     Examples
     --------
-    >>> xyzdata.get_url('GeoDa AirBnB')
+    >>> geodatasets.get_url('GeoDa AirBnB')
     'https://geodacenter.github.io/data-and-lab//data/airbnb.zip'
 
-    >>> xyzdata.get_url('geoda_airbnb')
+    >>> geodatasets.get_url('geoda_airbnb')
     'https://geodacenter.github.io/data-and-lab//data/airbnb.zip'
     """
     return data.query_name(name).url
@@ -51,7 +51,7 @@ def get_path(name):
 
     If it’s not in the local storage, it will be downloaded.
 
-    ``name`` is queried using :meth:`~xyzdata.Bunch.query_name`, so it only needs to
+    ``name`` is queried using :meth:`~geodatasets.Bunch.query_name`, so it only needs to
     contain the same letters in the same order as the item's name irrespective
     of the letter case, spaces, dashes and other characters.
 
@@ -69,17 +69,17 @@ def get_path(name):
     --------
     When it does not exist in the cache yet, it gets downloaded first:
 
-    >>> path = xyzdata.get_path('GeoDa AirBnB')
+    >>> path = geodatasets.get_path('GeoDa AirBnB')
     Downloading file 'airbnb.zip' from 'https://geodacenter.github.io/data-and-lab/\
-/data/airbnb.zip' to '/Users/martin/Library/Caches/xyzdata'.
+/data/airbnb.zip' to '/Users/martin/Library/Caches/geodatasets'.
     >>> path
-    '/Users/martin/Library/Caches/xyzdata/airbnb.zip'
+    '/Users/martin/Library/Caches/geodatasets/airbnb.zip'
 
     Every other call returns the path directly:
 
-    >>> path2 = xyzdata.get_path("geoda_airbnb")
+    >>> path2 = geodatasets.get_path("geoda_airbnb")
     >>> path2
-    '/Users/martin/Library/Caches/xyzdata/airbnb.zip'
+    '/Users/martin/Library/Caches/geodatasets/airbnb.zip'
     """
     return CACHE.fetch(data.query_name(name).filename)
 
@@ -90,7 +90,7 @@ def fetch(name):
     This is useful when it is expected that some data will be needed later but you
     want to avoid download at that time.
 
-    ``name`` is queried using :meth:`~xyzdata.Bunch.query_name`, so it only needs to
+    ``name`` is queried using :meth:`~geodatasets.Bunch.query_name`, so it only needs to
     contain the same letters in the same order as the item's name irrespective
     of the letter case, spaces, dashes and other characters.
 
@@ -105,15 +105,15 @@ def fetch(name):
 
     Examples
     --------
-    >>> xyzdata.fetch('nybb')
+    >>> geodatasets.fetch('nybb')
     Downloading file 'nybb_22c.zip' from 'https://data.cityofnewyork.us/api/geospatial/\
-tqmj-j8zm?method=export&format=Original' to '/Users/martin/Library/Caches/xyzdata'.
+tqmj-j8zm?method=export&format=Original' to '/Users/martin/Library/Caches/geodatasets'.
 
-    >>> xyzdata.fetch(['geoda airbnb', 'geoda guerry'])
+    >>> geodatasets.fetch(['geoda airbnb', 'geoda guerry'])
     Downloading file 'airbnb.zip' from 'https://geodacenter.github.io/data-and-lab//dat\
-a/airbnb.zip' to '/Users/martin/Library/Caches/xyzdata'.
+a/airbnb.zip' to '/Users/martin/Library/Caches/geodatasets'.
     Downloading file 'guerry.zip' from 'https://geodacenter.github.io/data-and-lab//dat\
-a/guerry.zip' to '/Users/martin/Library/Caches/xyzdata'.
+a/guerry.zip' to '/Users/martin/Library/Caches/geodatasets'.
 
     """
     if isinstance(name, str):

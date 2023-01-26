@@ -36,14 +36,14 @@ jobs:
           micromamba-version: "latest"
           channel-priority: "flexible"
 
-      - name: Install xyzdata
+      - name: Install geodatasets
         run: pip install .
 
       - name: run tests
-        run: pytest -v . -m "not request" --cov=xyzdata --cov-append --cov-report term-missing --cov-report xml --color=yes
+        run: pytest -v . -m "not request" --cov=geodatasets --cov-append --cov-report term-missing --cov-report xml --color=yes
 
       - name: test data
-        run: pytest -v . -m "request" --cov=xyzdata --cov-append --cov-report term-missing --cov-report xml --color=yes
+        run: pytest -v . -m "request" --cov=geodatasets --cov-append --cov-report term-missing --cov-report xml --color=yes
         if: matrix.os == 'ubuntu-latest' && matrix.environment-file == 'ci/latest.yaml'
 
       - uses: codecov/codecov-action@v3

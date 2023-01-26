@@ -1,4 +1,4 @@
-# xyzdata
+# geodatasets
 
 Fetch links or download and cache spatial data example files.
 
@@ -7,7 +7,7 @@ Fetch links or download and cache spatial data example files.
 While in the development, use `pip` from GitHub.
 
 ```sh
-pip install git+https://github.com/martinfleis/xyzdata.git
+pip install git+https://github.com/martinfleis/geodatasets.git
 ```
 
 ## How to use
@@ -15,9 +15,9 @@ pip install git+https://github.com/martinfleis/xyzdata.git
 The package comes with a database of datasets. To see all:
 
 ```py
-In [1]: import xyzdata
+In [1]: import geodatasets
 
-In [2]: xyzdata.data
+In [2]: geodatasets.data
 Out[2]:
 {'geoda': {'airbnb': {'url': 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip',
    'license': 'CC-0',
@@ -45,7 +45,7 @@ Out[2]:
 There is also convenient top-level API. One to get only the URL:
 
 ```py
-In [3]: xyzdata.get_url("geoda airbnb")
+In [3]: geodatasets.get_url("geoda airbnb")
 Out[3]: 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip'
 ```
 
@@ -53,14 +53,14 @@ And one to get the local path. If the file is not available in the cache, it wil
 downloaded first.
 
 ```py
-Out[4]: '/Users/martin/Library/Caches/xyzdata/airbnb.zip'
-In [4]: xyzdata.get_path('geoda airbnb')
+Out[4]: '/Users/martin/Library/Caches/geodatasets/airbnb.zip'
+In [4]: geodatasets.get_path('geoda airbnb')
 ```
 
 You can also get all the details:
 
 ```py
-In [5]: xyzdata.data.geoda.airbnb
+In [5]: geodatasets.data.geoda.airbnb
 Out[5]:
 {'url': 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip',
  'license': 'CC-0',
@@ -77,7 +77,7 @@ Out[5]:
 Or using the name query:
 
 ```py
-In [6]: xyzdata.data.query_name('geoda airbnb')
+In [6]: geodatasets.data.query_name('geoda airbnb')
 Out[6]:
 {'url': 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip',
  'license': 'CC-0',

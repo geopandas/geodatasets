@@ -1,7 +1,7 @@
 """
-Utilities to support XYZdata
+Utilities to support geodatasets
 
-Heavily based on top of xyzdata (Copyright (c) 2021, GeoPandas) licensed
+Heavily based on top of geodatasets (Copyright (c) 2021, GeoPandas) licensed
 under BSD 3-clause
 """
 from __future__ import annotations
@@ -32,9 +32,9 @@ class Bunch(dict):
         children = ""
         for key in self.keys():
             if isinstance(self[key], DataItem):
-                obj = "xyzdata.DataItem"
+                obj = "geodatasets.DataItem"
             else:
-                obj = "xyzdata.Bunch"
+                obj = "geodatasets.Bunch"
             uid = str(uuid.uuid4())
             children += f"""
             <li class="xyz-child">
@@ -52,7 +52,7 @@ class Bunch(dict):
         {style}
             <div class="xyz-wrap">
                 <div class="xyz-header">
-                    <div class="xyz-obj">xyzdata.Bunch</div>
+                    <div class="xyz-obj">geodatasets.Bunch</div>
                     <div class="xyz-name">{len(self)} items</div>
                 </div>
                 <div class="xyz-details">
@@ -162,7 +162,7 @@ class DataItem(Bunch):
         {style}
             <div class="xyz-wrap">
                 <div class="xyz-header">
-                    <div class="xyz-obj">xyzdata.DataItem</div>
+                    <div class="xyz-obj">geodatasets.DataItem</div>
                     <div class="xyz-name">{self.name}</div>
                 </div>
                 <div class="xyz-details">
@@ -195,7 +195,7 @@ def _load_json(f):
 
 
 CSS_STYLE = """
-/* CSS stylesheet for displaying xyzdata objects in Jupyter.*/
+/* CSS stylesheet for displaying geodatasets objects in Jupyter.*/
 .xyz-wrap {
     --xyz-border-color: var(--jp-border-color2, #ddd);
     --xyz-font-color2: var(--jp-content-font-color2, rgba(128, 128, 128, 1));

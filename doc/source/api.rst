@@ -4,17 +4,17 @@
 API reference
 =============
 
-The ``xyzdata`` package has top-level functions that will cover 95% of use cases and
+The ``geodatasets`` package has top-level functions that will cover 95% of use cases and
 other tooling handling the database.
 
 Top-level API
 -------------
 
-In most cases, you will be using :func:`~xyzdata.get_path` to download the data and get the path
-to the local storage, :func:`~xyzdata.get_url` to get the link to the original dataset in its
-online location and :func:`~xyzdata.fetch` to pre-download data to the local storage.
+In most cases, you will be using :func:`~geodatasets.get_path` to download the data and get the path
+to the local storage, :func:`~geodatasets.get_url` to get the link to the original dataset in its
+online location and :func:`~geodatasets.fetch` to pre-download data to the local storage.
 
-.. currentmodule:: xyzdata
+.. currentmodule:: geodatasets
 
 .. autofunction:: get_path
 

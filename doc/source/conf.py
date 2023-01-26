@@ -16,19 +16,19 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, os.path.abspath("../.."))
-import xyzdata  # noqa
+import geodatasets  # noqa
 
 # -- Project information -----------------------------------------------------
 
-project = "xyzdata"
+project = "geodatasets"
 copyright = "2023, Martin Fleischmann"
 author = "Martin Fleischmann"
 
-version = xyzdata.__version__
+version = geodatasets.__version__
 # The full version, including alpha/beta/rc tags
 release = version
 
-html_title = f'xyzdata <span id="release">{release}</span>'
+html_title = f'geodatasets <span id="release">{release}</span>'
 
 
 # -- General configuration ---------------------------------------------------
