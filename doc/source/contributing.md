@@ -22,6 +22,7 @@ schema to add a single dataset:
         "attribution": "University of Github",
         "name": "dataset_name",
         "description": "Contents of my file",
+        "geometry_type": "Polygon",
         "nrows": 77,
         "ncols": 20,
         "details": "https://your-site.com/link-to-explanantion/",
@@ -43,6 +44,7 @@ you can group then within a `Bunch` using the following schema:
             "attribution": "University of Github",
             "name": "dataset_name",
             "description": "Contents of my file",
+            "geometry_type": "Polygon",
             "nrows": 77,
             "ncols": 20,
             "details": "https://your-site.com/link-to-explanantion/",
@@ -55,11 +57,13 @@ you can group then within a `Bunch` using the following schema:
             "attribution": "University of Github",
             "name": "dataset_name",
             "description": "Contents of my file",
+            "geometry_type": "Point",
             "nrows": 77,
             "ncols": 20,
             "details": "https://your-site.com/link-to-explanantion/",
             "hash": "a2ab1e3f938226d287dd76cde18c00e2d3a260640dd826da7131827d9e76c824",
-            "filename": "my_file.zip"
+            "filename": "my_file.zip",
+            "members": ["use_only_this.geojson"]
       }
    },
 }
@@ -68,7 +72,9 @@ you can group then within a `Bunch` using the following schema:
 It is mandatory to always specify at least `name`, `url`, `hash` and `filename`. `hash`
 is a sha256 hash of the file to check that a user gets the expected file and a
 `filename` specifies how the downloaded file will be called. Ensure that it has a correct
-suffix. Don't forget to add any other custom attributes you'd like.
+suffix. Don't forget to add any other custom attributes you'd like. Attribute `members` has
+a specific meaning and specifies file (or files in case of ESRI Shapefile) that shall be
+extracted from the archive and used.
 
 ## Code and documentation
 
