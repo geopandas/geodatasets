@@ -43,6 +43,6 @@ def test_fetch():
         assert pooch.os_cache("geodatasets").joinpath(data).exists()
 
     # cleanup
-    for data in ["airbnb.zip", "nybb_22c.zip", "sids.zip"]:
+    for data in ["airbnb.zip", "nybb_22c.zip", "nyc_neighborhoods.zip"]:
         in_cache = pooch.os_cache("geodatasets").joinpath(data)
         os.remove(in_cache)
