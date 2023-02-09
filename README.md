@@ -36,25 +36,28 @@ In [1]: import geodatasets
 In [2]: geodatasets.data
 Out[2]:
 {'geoda': {'airbnb': {'url': 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip',
-   'license': 'CC-0',
-   'attribution': 'GeoDa Data and Lab',
+   'license': 'NA',
+   'attribution': 'Center for Spatial Data Science, University of Chicago',
    'name': 'geoda.airbnb',
    'description': 'Airbnb rentals, socioeconomics, and crime in Chicago',
+   'geometry_type': 'Polygon',
    'nrows': 77,
-   'ncols': 20,
+   'ncols': 21,
    'details': 'https://geodacenter.github.io/data-and-lab//airbnb/',
    'hash': 'a2ab1e3f938226d287dd76cde18c00e2d3a260640dd826da7131827d9e76c824',
    'filename': 'airbnb.zip'},
   'atlanta': {'url': 'https://geodacenter.github.io/data-and-lab//data/atlanta_hom.zip',
-   'license': 'CC-0',
-   'attribution': 'GeoDa Data and Lab',
+   'license': 'NA',
+   'attribution': 'Center for Spatial Data Science, University of Chicago',
    'name': 'geoda.atlanta',
    'description': 'Atlanta, GA region homicide counts and rates',
+   'geometry_type': 'Polygon',
    'nrows': 90,
-   'ncols': 23,
+   'ncols': 24,
    'details': 'https://geodacenter.github.io/data-and-lab//atlanta_old/',
-   'hash': 'missing',
-   'filename': 'atlanta_hom.zip'},
+   'hash': 'a33a76e12168fe84361e60c88a9df4856730487305846c559715c89b1a2b5e09',
+   'filename': 'atlanta_hom.zip',
+   'members': ['atlanta_hom/atl_hom.geojson']},
    ...
 ```
 
@@ -69,8 +72,8 @@ And one to get the local path. If the file is not available in the cache, it wil
 downloaded first.
 
 ```py
-Out[4]: '/Users/martin/Library/Caches/geodatasets/airbnb.zip'
 In [4]: geodatasets.get_path('geoda airbnb')
+Out[4]: '/Users/martin/Library/Caches/geodatasets/airbnb.zip'
 ```
 
 You can also get all the details:
@@ -79,12 +82,13 @@ You can also get all the details:
 In [5]: geodatasets.data.geoda.airbnb
 Out[5]:
 {'url': 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip',
- 'license': 'CC-0',
- 'attribution': 'GeoDa Data and Lab',
+ 'license': 'NA',
+ 'attribution': 'Center for Spatial Data Science, University of Chicago',
  'name': 'geoda.airbnb',
  'description': 'Airbnb rentals, socioeconomics, and crime in Chicago',
+ 'geometry_type': 'Polygon',
  'nrows': 77,
- 'ncols': 20,
+ 'ncols': 21,
  'details': 'https://geodacenter.github.io/data-and-lab//airbnb/',
  'hash': 'a2ab1e3f938226d287dd76cde18c00e2d3a260640dd826da7131827d9e76c824',
  'filename': 'airbnb.zip'}
@@ -96,12 +100,13 @@ Or using the name query:
 In [6]: geodatasets.data.query_name('geoda airbnb')
 Out[6]:
 {'url': 'https://geodacenter.github.io/data-and-lab//data/airbnb.zip',
- 'license': 'CC-0',
- 'attribution': 'GeoDa Data and Lab',
+ 'license': 'NA',
+ 'attribution': 'Center for Spatial Data Science, University of Chicago',
  'name': 'geoda.airbnb',
  'description': 'Airbnb rentals, socioeconomics, and crime in Chicago',
+ 'geometry_type': 'Polygon',
  'nrows': 77,
- 'ncols': 20,
+ 'ncols': 21,
  'details': 'https://geodacenter.github.io/data-and-lab//airbnb/',
  'hash': 'a2ab1e3f938226d287dd76cde18c00e2d3a260640dd826da7131827d9e76c824',
  'filename': 'airbnb.zip'}
