@@ -55,6 +55,8 @@ def get_path(name):
     contain the same letters in the same order as the item's name irrespective
     of the letter case, spaces, dashes and other characters.
 
+    For Datasets containing multiple files, the archive is automatically extracted.
+
     Parameters
     ----------
     name : str
@@ -121,14 +123,30 @@ def fetch(name):
     Examples
     --------
     >>> geodatasets.fetch('nybb')
-    Downloading file 'nybb_22c.zip' from 'https://data.cityofnewyork.us/api/geospatial/\
-tqmj-j8zm?method=export&format=Original' to '/Users/martin/Library/Caches/geodatasets'.
+    Downloading file 'nybb_22c.zip' from 'https://data.cityofnewyork.us/api/geospatial\
+/tqmj-j8zm?method=export&format=Original' to '/Users/martin/Library/Caches/geodatasets'.
+    Extracting 'nybb_22c/nybb.shp' from '/Users/martin/Library/Caches/geodatasets/nybb_\
+22c.zip' to '/Users/martin/Library/Caches/geodatasets/nybb_22c.zip.unzip'
+    Extracting 'nybb_22c/nybb.shx' from '/Users/martin/Library/Caches/geodatasets/nybb_\
+22c.zip' to '/Users/martin/Library/Caches/geodatasets/nybb_22c.zip.unzip'
+    Extracting 'nybb_22c/nybb.dbf' from '/Users/martin/Library/Caches/geodatasets/nybb_\
+22c.zip' to '/Users/martin/Library/Caches/geodatasets/nybb_22c.zip.unzip'
+    Extracting 'nybb_22c/nybb.prj' from '/Users/martin/Library/Caches/geodatasets/nybb_\
+22c.zip' to '/Users/martin/Library/Caches/geodatasets/nybb_22c.zip.unzip'
 
     >>> geodatasets.fetch(['geoda airbnb', 'geoda guerry'])
     Downloading file 'airbnb.zip' from 'https://geodacenter.github.io/data-and-lab//dat\
 a/airbnb.zip' to '/Users/martin/Library/Caches/geodatasets'.
     Downloading file 'guerry.zip' from 'https://geodacenter.github.io/data-and-lab//dat\
 a/guerry.zip' to '/Users/martin/Library/Caches/geodatasets'.
+    Extracting 'guerry/guerry.shp' from '/Users/martin/Library/Caches/geodatasets/guerr\
+y.zip' to '/Users/martin/Library/Caches/geodatasets/guerry.zip.unzip'
+    Extracting 'guerry/guerry.dbf' from '/Users/martin/Library/Caches/geodatasets/guerr\
+y.zip' to '/Users/martin/Library/Caches/geodatasets/guerry.zip.unzip'
+    Extracting 'guerry/guerry.shx' from '/Users/martin/Library/Caches/geodatasets/guerr\
+y.zip' to '/Users/martin/Library/Caches/geodatasets/guerry.zip.unzip'
+    Extracting 'guerry/guerry.prj' from '/Users/martin/Library/Caches/geodatasets/guerr\
+y.zip' to '/Users/martin/Library/Caches/geodatasets/guerry.zip.unzip'
 
     """
     if isinstance(name, str):
