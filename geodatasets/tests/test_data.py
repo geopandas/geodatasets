@@ -1,6 +1,5 @@
-from pathlib import Path
-
-import pooch
+import geopandas as gpd
+import pandas as pd
 import pytest
 
 import geodatasets
@@ -10,5 +9,6 @@ import geodatasets
 @pytest.mark.parametrize("name", geodatasets.data.flatten())
 def test_data_exists(name):
     dataset = geodatasets.data.query_name(name)
-    path = pooch.retrieve(dataset["url"], known_hash=dataset["hash"])
-    assert Path(path).exists()
+    gdf = gpd.read_file(geodatasets.get_path(name), engine="pyogrio")
+    assert isinstance(gdf, pd.DataFrame)
+    assert gdf.shape == (dataset.nrows, dataset.ncols)

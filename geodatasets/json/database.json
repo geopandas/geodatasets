@@ -8,7 +8,7 @@
             "description": "Airbnb rentals, socioeconomics, and crime in Chicago",
             "geometry_type": "Polygon",
             "nrows": 77,
-            "ncols": 20,
+            "ncols": 21,
             "details": "https://geodacenter.github.io/data-and-lab//airbnb/",
             "hash": "a2ab1e3f938226d287dd76cde18c00e2d3a260640dd826da7131827d9e76c824",
             "filename": "airbnb.zip"
@@ -21,7 +21,7 @@
             "description": "Atlanta, GA region homicide counts and rates",
             "geometry_type": "Polygon",
             "nrows": 90,
-            "ncols": 23,
+            "ncols": 24,
             "details": "https://geodacenter.github.io/data-and-lab//atlanta_old/",
             "hash": "a33a76e12168fe84361e60c88a9df4856730487305846c559715c89b1a2b5e09",
             "filename": "atlanta_hom.zip",
@@ -48,7 +48,7 @@
             "description": "2000 Census Tract Data for Charleston, SC MSA and counties",
             "geometry_type": "Polygon",
             "nrows": 117,
-            "ncols": 30,
+            "ncols": 31,
             "details": "https://geodacenter.github.io/data-and-lab//charleston-1_old/",
             "hash": "4a4fa9c8dd4231ae0b2f12f24895b8336bcab0c28c48653a967cffe011f63a7c",
             "filename": "CharlestonMSA.zip",
@@ -61,8 +61,8 @@
             "name": "geoda.charleston2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Charleston, SC MSA",
             "geometry_type": "Polygon",
-            "nrows": 44,
-            "ncols": 97,
+            "nrows": 42,
+            "ncols": 60,
             "details": "https://geodacenter.github.io/data-and-lab//charleston2/",
             "hash": "056d5d6e236b5bd95f5aee26c77bbe7d61bd07db5aaf72866c2f545205c1d8d7",
             "filename": "CharlestonMSA2.zip",
@@ -76,7 +76,7 @@
             "description": "Chicago Health + Socio-Economics",
             "geometry_type": "Polygon",
             "nrows": 77,
-            "ncols": 86,
+            "ncols": 87,
             "details": "https://geodacenter.github.io/data-and-lab//comarea_vars/",
             "hash": "4e872adb552786eae2fcd745524696e5e4cd33cc9a6c032471c0e75328871401",
             "filename": "comarea.zip"
@@ -89,7 +89,7 @@
             "description": "Chicago Community Area Population Percent Change for 2000 and 2010",
             "geometry_type": "Polygon",
             "nrows": 77,
-            "ncols": 8,
+            "ncols": 9,
             "details": "https://geodacenter.github.io/data-and-lab//commpop/",
             "hash": "1dbebb50c8ea47e2279ea819ef64ba793bdee2b88e4716bd6c6ec0e0d8e0e05b",
             "filename": "chicago_commpop.zip",
@@ -102,8 +102,8 @@
             "name": "geoda.chile_labor",
             "description": "Labor Markets in Chile (1982-2002)",
             "geometry_type": "Polygon",
-            "nrows": 141,
-            "ncols": 62,
+            "nrows": 64,
+            "ncols": 140,
             "details": "https://geodacenter.github.io/data-and-lab//FLMA/",
             "hash": "4777072268d0127b3d0be774f51d0f66c15885e9d3c92bc72c641a72f220796c",
             "filename": "flma.zip",
@@ -117,7 +117,7 @@
             "description": "2008 Cincinnati Crime + Socio-Demographics",
             "geometry_type": "Polygon",
             "nrows": 457,
-            "ncols": 89,
+            "ncols": 73,
             "details": "https://geodacenter.github.io/data-and-lab//walnut_hills/",
             "hash": "d6871dd688bd14cf4710a218d721d34f6574456f2a14d5c5cfe5a92054ee9763",
             "filename": "walnuthills_updated.zip",
@@ -129,8 +129,9 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.cleveland",
             "description": "2015 sales prices of homes in Cleveland, OH.",
+            "geometry_type": "Point",
             "nrows": 205,
-            "ncols": 9,
+            "ncols": 10,
             "details": "https://geodacenter.github.io/data-and-lab//clev_sls_154_core/",
             "hash": "49aeba03eb06bf9b0d9cddd6507eb4a226b7c7a7561145562885c5cddfaeaadf",
             "filename": "cleveland.zip"
@@ -141,23 +142,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.columbus",
             "description": "Columbus neighborhood crime",
+            "geometry_type": "Polygon",
             "nrows": 49,
-            "ncols": 20,
+            "ncols": 21,
             "details": "https://geodacenter.github.io/data-and-lab//columbus/",
             "hash": "cf3bde1a32b31c48a63bc513587a1f8d310ecae5de9cae460dc9e66fe5a65e4d",
-            "filename": "columbus.zip"
-        },
-        "elections": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/election.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.elections",
-            "description": "2012 and 2016 Presidential Elections",
-            "nrows": 3108,
-            "ncols": 74,
-            "details": "https://geodacenter.github.io/data-and-lab//county_election_2012_2016-variables/",
-            "hash": "5c5b17f5b1747065340eae16f67819276851cacd52fda80a22be119f65ad5ebe",
-            "filename": "election.zip"
+            "filename": "columbus.zip",
+            "members": ["columbus/columbus.geojson"]
         },
         "grid100": {
             "url": "https://geodacenter.github.io/data-and-lab//data/grid100.zip",
@@ -165,11 +156,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.grid100",
             "description": "Grid with simulated variables",
+            "geometry_type": "Polygon",
             "nrows": 100,
-            "ncols": 34,
+            "ncols": 37,
             "details": "https://geodacenter.github.io/data-and-lab//grid100/",
             "hash": "5702ba39606044f71d53ae6a83758b81332bd3aa216b7b7b6e1c60dd0e72f476",
-            "filename": "grid100.zip"
+            "filename": "grid100.zip",
+            "members": ["grid100/grid100s.gpkg"]
         },
         "groceries": {
             "url": "https://geodacenter.github.io/data-and-lab//data/grocery.zip",
@@ -177,35 +170,41 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.groceries",
             "description": "2015 Chicago supermarkets",
+            "geometry_type": "Point",
             "nrows": 148,
-            "ncols": 7,
+            "ncols": 8,
             "details": "https://geodacenter.github.io/data-and-lab//chicago_sup_vars/",
             "hash": "ead10e53b21efcaa29b798428b93ba2a1c0ba1b28f046265c1737712fa83f88a",
-            "filename": "grocery.zip"
+            "filename": "grocery.zip",
+            "members": ["grocery/chicago_sup.shp", "grocery/chicago_sup.dbf", "grocery/chicago_sup.shx", "grocery/chicago_sup.prj"]
         },
         "guerry": {
             "url": "https://geodacenter.github.io/data-and-lab//data/guerry.zip",
             "license": "NA",
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.guerry",
-            "description": "Moral statistics of France (Guerry, 1833)",
+            "description": "Mortal statistics of France (Guerry, 1833)",
+            "geometry_type": "Polygon",
             "nrows": 85,
-            "ncols": 23,
+            "ncols": 24,
             "details": "https://geodacenter.github.io/data-and-lab//Guerry/",
             "hash": "80d2b355ad3340fcffa0a28e5cec0698af01067f8059b1a60388d200a653b3e8",
-            "filename": "guerry.zip"
+            "filename": "guerry.zip",
+            "members": ["guerry/guerry.shp", "guerry/guerry.dbf", "guerry/guerry.shx", "guerry/guerry.prj"]
         },
-        "health+": {
+        "health": {
             "url": "https://geodacenter.github.io/data-and-lab//data/income_diversity.zip",
             "license": "NA",
             "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.health+",
+            "name": "geoda.health",
             "description": "2000 Health, Income + Diversity",
+            "geometry_type": "Polygon",
             "nrows": 3984,
-            "ncols": 64,
+            "ncols": 65,
             "details": "https://geodacenter.github.io/data-and-lab//co_income_diversity_variables/",
             "hash": "eafee1063040258bc080e7b501bdf1438d6e45ba208954d8c2e1a7562142d0a7",
-            "filename": "income_diversity.zip"
+            "filename": "income_diversity.zip",
+            "members": ["income_diversity/income_diversity.shp", "income_diversity/income_diversity.dbf", "income_diversity/income_diversity.shx", "income_diversity/income_diversity.prj"]
         },
         "health_indicators": {
             "url": "https://geodacenter.github.io/data-and-lab//data/healthIndicators.zip",
@@ -213,8 +212,9 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.health_indicators",
             "description": "Chicago Health Indicators (2005-11)",
+            "geometry_type": "Polygon",
             "nrows": 77,
-            "ncols": 31,
+            "ncols": 32,
             "details": "https://geodacenter.github.io/data-and-lab//healthindicators-variables/",
             "hash": "b43683245f8fc3b4ab69ffa75d2064920a1a91dc76b9dcc08e288765ba0c94f3",
             "filename": "healthIndicators.zip"
@@ -225,11 +225,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.hickory1",
             "description": "2000 Census Tract Data for Hickory, NC MSA and counties",
+            "geometry_type": "Polygon",
             "nrows": 68,
-            "ncols": 30,
+            "ncols": 31,
             "details": "https://geodacenter.github.io/data-and-lab//hickory1/",
             "hash": "4c0804608d303e6e44d51966bb8927b1f5f9e060a9b91055a66478b9039d2b44",
-            "filename": "HickoryMSA.zip"
+            "filename": "HickoryMSA.zip",
+            "members": ["HickoryMSA/nc_final_census2.geojson"]
         },
         "hickory2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/HickoryMSA2.zip",
@@ -237,11 +239,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.hickory2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Hickory, NC MSA",
+            "geometry_type": "Polygon",
             "nrows": 29,
-            "ncols": 55,
+            "ncols": 56,
             "details": "https://geodacenter.github.io/data-and-lab//hickory2/",
             "hash": "5e9498e1ff036297c3eea3cc42ac31501680a43b50c71b486799ef9021679d07",
-            "filename": "HickoryMSA2.zip"
+            "filename": "HickoryMSA2.zip",
+            "members": ["HickoryMSA2/HickoryMSA2.geojson"]
         },
         "home_sales": {
             "url": "https://geodacenter.github.io/data-and-lab//data/kingcounty.zip",
@@ -249,11 +253,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.home_sales",
             "description": "2014-15 Home Sales in King County, WA",
+            "geometry_type": "Polygon",
             "nrows": 21613,
-            "ncols": 21,
+            "ncols": 22,
             "details": "https://geodacenter.github.io/data-and-lab//KingCounty-HouseSales2015/",
             "hash": "b979f0eb2cef6ebd2c761d552821353f795635eb8db53a95f2815fc46e1f644c",
-            "filename": "kingcounty.zip"
+            "filename": "kingcounty.zip",
+            "members": ["kingcounty/kc_house.shp", "kingcounty/kc_house.dbf", "kingcounty/kc_house.shx", "kingcounty/kc_house.prj"]
         },
         "houston": {
             "url": "https://geodacenter.github.io/data-and-lab//data/houston_hom.zip",
@@ -261,11 +267,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.houston",
             "description": "Houston, TX region homicide counts and rates",
+            "geometry_type": "Polygon",
             "nrows": 52,
-            "ncols": 23,
+            "ncols": 24,
             "details": "https://geodacenter.github.io/data-and-lab//houston/",
             "hash": "d3167fd150a1369d9a32b892d3b2a8747043d3d382c3dd81e51f696b191d0d15",
-            "filename": "houston_hom.zip"
+            "filename": "houston_hom.zip",
+            "members": ["houston_hom/hou_hom.geojson"]
         },
         "juvenile": {
             "url": "https://geodacenter.github.io/data-and-lab//data/juvenile.zip",
@@ -273,11 +281,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.juvenile",
             "description": "Cardiff juvenile delinquent residences",
+            "geometry_type": "Point",
             "nrows": 168,
-            "ncols": 3,
+            "ncols": 4,
             "details": "https://geodacenter.github.io/data-and-lab//juvenile/",
             "hash": "811cfcfa613578214d907bfbdd396c6e02261e5cda6d56b25a6f961148de961c",
-            "filename": "juvenile.zip"
+            "filename": "juvenile.zip",
+            "members": ["juvenile/juvenile.shp", "juvenile/juvenile.shx", "juvenile/juvenile.dbf"]
         },
         "lansing1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/LansingMSA.zip",
@@ -285,11 +295,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.lansing1",
             "description": "2000 Census Tract Data for Lansing, MI MSA and counties",
+            "geometry_type": "Polygon",
             "nrows": 117,
-            "ncols": 30,
+            "ncols": 31,
             "details": "https://geodacenter.github.io/data-and-lab//lansing1/",
             "hash": "724ce3d889fa50e7632d16200cf588d40168d49adaf5bca45049dc1b3758bde1",
-            "filename": "LansingMSA.zip"
+            "filename": "LansingMSA.zip",
+            "members": ["LansingMSA/mi_final_census2.geojson"]
         },
         "lansing2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/LansingMSA2.zip",
@@ -297,23 +309,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.lansing2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Lansing, MI MSA",
+            "geometry_type": "Polygon",
             "nrows": 46,
-            "ncols": 55,
+            "ncols": 56,
             "details": "https://geodacenter.github.io/data-and-lab//lansing2/",
             "hash": "7657c05d3bd6090c4d5914cfe5aaf01f694601c1e0c29bc3ecbe9bc523662303",
-            "filename": "LansingMSA2.zip"
-        },
-        "laozone": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/laozone.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.laozone",
-            "description": "Ozone measures at monitoring stations in Los Angeles basin",
-            "nrows": 32,
-            "ncols": 8,
-            "details": "https://geodacenter.github.io/data-and-lab//ozone/",
-            "hash": "30be6daa3b0fc86940bec9758c2ba626c2c98b11b33d55cef23bd094192c9f8b",
-            "filename": "laozone.zip"
+            "filename": "LansingMSA2.zip",
+            "members": ["LansingMSA2/LansingMSA2.geojson"]
         },
         "lasrosas": {
             "url": "https://geodacenter.github.io/data-and-lab//data/lasrosas.zip",
@@ -321,11 +323,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.lasrosas",
             "description": "Corn yield, fertilizer and field data for precision agriculture, Argentina, 1999",
+            "geometry_type": "Polygon",
             "nrows": 1738,
-            "ncols": 34,
+            "ncols": 35,
             "details": "https://geodacenter.github.io/data-and-lab//lasrosas/",
             "hash": "038d0e82203f2875b50499dbd8498ca9c762ebd8003b2f2203ebc6acada8f8fd",
-            "filename": "lasrosas.zip"
+            "filename": "lasrosas.zip",
+            "members": ["lasrosas/rosas1999.gpkg"]
         },
         "liquor_stores": {
             "url": "https://geodacenter.github.io/data-and-lab//data/liquor.zip",
@@ -333,11 +337,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.liquor_stores",
             "description": "2015 Chicago Liquor Stores",
+            "geometry_type": "Point",
             "nrows": 571,
-            "ncols": 2,
+            "ncols": 3,
             "details": "https://geodacenter.github.io/data-and-lab//liq_chicago/",
             "hash": "6a483a6a7066a000bc97bfe71596cf28834d3088fbc958455b903a0938b3b530",
-            "filename": "liquor.zip"
+            "filename": "liquor.zip",
+            "members": ["liq_Chicago.shp", "liq_Chicago.dbf", "liq_Chicago.shx", "liq_Chicago.prj"]
         },
         "malaria": {
             "url": "https://geodacenter.github.io/data-and-lab//data/malariacolomb.zip",
@@ -345,11 +351,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.malaria",
             "description": "Malaria incidence and population (1973, 95, 93 censuses and projections until 2005)",
+            "geometry_type": "Polygon",
             "nrows": 1068,
-            "ncols": 50,
+            "ncols": 51,
             "details": "https://geodacenter.github.io/data-and-lab//colomb_malaria/",
             "hash": "ca77477656829833a4e3e384b02439632fa28bb577610fe5aef9e0b094c41a95",
-            "filename": "malariacolomb.zip"
+            "filename": "malariacolomb.zip",
+            "members": ["malariacolomb/colmunic.gpkg"]
         },
         "milwaukee1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/MilwaukeeMSA.zip",
@@ -357,11 +365,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.milwaukee1",
             "description": "2000 Census Tract Data for Milwaukee, WI MSA",
+            "geometry_type": "Polygon",
             "nrows": 417,
-            "ncols": 31,
+            "ncols": 35,
             "details": "https://geodacenter.github.io/data-and-lab//milwaukee1/",
             "hash": "bf3c9617c872db26ea56f20e82a449f18bb04d8fb76a653a2d3842d465bc122c",
-            "filename": "MilwaukeeMSA.zip"
+            "filename": "MilwaukeeMSA.zip",
+            "members": ["MilwaukeeMSA/wi_final_census2_random4.gpkg"]
         },
         "milwaukee2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/MilwaukeeMSA2.zip",
@@ -369,11 +379,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.milwaukee2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Milwaukee, WI MSA",
+            "geometry_type": "Polygon",
             "nrows": 83,
-            "ncols": 55,
+            "ncols": 60,
             "details": "https://geodacenter.github.io/data-and-lab//milwaukee2/",
             "hash": "7f74212d63addb9ab84fac9447ee898498c8fafc284edcffe1f1ac79c2175d60",
-            "filename": "MilwaukeeMSA2.zip"
+            "filename": "MilwaukeeMSA2.zip",
+            "members": ["MilwaukeeMSA2/MilwaukeeMSA2.gpkg"]
         },
         "ncovr": {
             "url": "https://geodacenter.github.io/data-and-lab//data/ncovr.zip",
@@ -381,11 +393,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.ncovr",
             "description": "US county homicides 1960-1990",
+            "geometry_type": "Polygon",
             "nrows": 3085,
-            "ncols": 69,
+            "ncols": 70,
             "details": "https://geodacenter.github.io/data-and-lab//ncovr/",
             "hash": "e8cb04e6da634c6cd21808bd8cfe4dad6e295b22e8d40cc628e666887719cfe9",
-            "filename": "ncovr.zip"
+            "filename": "ncovr.zip",
+            "members": ["ncovr/NAT.gpkg"]
         },
         "natregimes": {
             "url": "https://geodacenter.github.io/data-and-lab//data/natregimes.zip",
@@ -393,8 +407,9 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.natregimes",
             "description": "NCOVR with regimes (book/PySAL)",
+            "geometry_type": "Polygon",
             "nrows": 3085,
-            "ncols": 73,
+            "ncols": 74,
             "details": "https://geodacenter.github.io/data-and-lab//natregimes/",
             "hash": "431d0d95ffa000692da9319e6bd28701b1156f7b8e716d4bfcd1e09b6e357918",
             "filename": "natregimes.zip"
@@ -405,11 +420,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.ndvi",
             "description": "Normalized Difference Vegetation Index grid",
+            "geometry_type": "Polygon",
             "nrows": 49,
-            "ncols": 5,
+            "ncols": 8,
             "details": "https://geodacenter.github.io/data-and-lab//ndvi/",
             "hash": "a89459e50a4495c24ead1d284930467ed10eb94829de16a693a9fa89dea2fe22",
-            "filename": "ndvi.zip"
+            "filename": "ndvi.zip",
+            "members": ["ndvi/ndvigrid.gpkg"]
         },
         "nepal": {
             "url": "https://geodacenter.github.io/data-and-lab//data/nepal.zip",
@@ -417,8 +434,9 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.nepal",
             "description": "Health, poverty and education indicators for Nepal districts",
+            "geometry_type": "Polygon",
             "nrows": 75,
-            "ncols": 61,
+            "ncols": 62,
             "details": "https://geodacenter.github.io/data-and-lab//nepal/",
             "hash": "d7916568fe49ff258d0f03ac115e68f64cdac572a9fd2b29de2d70554ac2b20d",
             "filename": "nepal.zip"
@@ -429,8 +447,9 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.nyc",
             "description": "Demographic and housing data for New York City subboroughs, 2002-09",
+            "geometry_type": "Polygon",
             "nrows": 55,
-            "ncols": 34,
+            "ncols": 35,
             "details": "https://geodacenter.github.io/data-and-lab//nyc/",
             "hash": "a67dff2f9e6da9e11737e6be5a16e1bc33954e2c954332d68bcbf6ff7203702b",
             "filename": "nyc.zip"
@@ -441,8 +460,9 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.nyc_earnings",
             "description": "Block-level Earnings in NYC (2002-14)",
+            "geometry_type": "Polygon",
             "nrows": 108487,
-            "ncols": 70,
+            "ncols": 71,
             "details": "https://geodacenter.github.io/data-and-lab//LEHD_Data/",
             "hash": "771fe11e59a16d4c15c6471d9a81df5e9c9bda5ef0a207e77d8ff21b2c16891b",
             "filename": "lehd.zip"
@@ -453,8 +473,9 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.nyc_education",
             "description": "NYC Education (2000)",
+            "geometry_type": "Polygon",
             "nrows": 2216,
-            "ncols": 56,
+            "ncols": 57,
             "details": "https://geodacenter.github.io/data-and-lab//NYC-Census-2000/",
             "hash": "ecdf342654415107911291a8076c1685bd2c8a08d8eaed3ce9c3e9401ef714f2",
             "filename": "nyc_2000Census.zip"
@@ -465,35 +486,12 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.nyc_neighborhoods",
             "description": "Demographics for New York City neighborhoods",
+            "geometry_type": "Polygon",
             "nrows": 195,
-            "ncols": 98,
+            "ncols": 99,
             "details": "https://geodacenter.github.io/data-and-lab//NYC-Nhood-ACS-2008-12/",
             "hash": "aeb75fc5c95fae1088093827fca69928cee3ad27039441bb35c03013d2ee403f",
             "filename": "nycnhood_acs.zip"
-        },
-        "nyc_socio-demographics": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/nyctract_acs.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.nyc_socio-demographics",
-            "description": "NYC Education + Socio-Demographics",
-            "nrows": 2166,
-            "ncols": 113,
-            "details": "https://geodacenter.github.io/data-and-lab//NYC_Tract_ACS2008_12/",
-            "hash": "29b6a2996eb54406654548312a630078d3c20d6dcbec74a5ce3c2ef88d3dbfdd",
-            "filename": "nyctract_acs.zip"
-        },
-        "ohiolung": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/ohiolung.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.ohiolung",
-            "description": "Ohio lung cancer data, 1968, 1978, 1988",
-            "nrows": 88,
-            "ncols": 42,
-            "details": "https://geodacenter.github.io/data-and-lab//ohiolung/",
-            "hash": "17de18e955de3b4a3c0a2241f0074074bf2979ce3dfd6ba4c8f3b8cb07a3244c",
-            "filename": "ohiolung.zip"
         },
         "orlando1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/OrlandoMSA.zip",
@@ -501,11 +499,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.orlando1",
             "description": "2000 Census Tract Data for Orlando, FL MSA and counties",
+            "geometry_type": "Polygon",
             "nrows": 328,
-            "ncols": 30,
+            "ncols": 31,
             "details": "https://geodacenter.github.io/data-and-lab//orlando1/",
             "hash": "e98ea5b9ffaf3e421ed437f665c739d1e92d9908e2b121c75ac02ecf7de2e254",
-            "filename": "OrlandoMSA.zip"
+            "filename": "OrlandoMSA.zip",
+            "members": ["OrlandoMSA/orlando_final_census2.gpkg"]
         },
         "orlando2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/OrlandoMSA2.zip",
@@ -513,11 +513,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.orlando2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Orlando, FL MSA",
+            "geometry_type": "Polygon",
             "nrows": 94,
-            "ncols": 59,
+            "ncols": 60,
             "details": "https://geodacenter.github.io/data-and-lab//orlando2/",
             "hash": "4cd8c3469cb7edea5f0fb615026192e12b1d4b50c22b28345adf476bc85d0f03",
-            "filename": "OrlandoMSA2.zip"
+            "filename": "OrlandoMSA2.zip",
+            "members": ["OrlandoMSA2/OrlandoMSA2.gpkg"]
         },
         "oz9799": {
             "url": "https://geodacenter.github.io/data-and-lab//data/oz9799.zip",
@@ -525,11 +527,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.oz9799",
             "description": "Monthly ozone data, 1997-99",
+            "geometry_type": "Point",
             "nrows": 30,
             "ncols": 78,
             "details": "https://geodacenter.github.io/data-and-lab//oz96/",
             "hash": "1ecc7c46f5f42af6057dedc1b73f56b576cb9716d2c08d23cba98f639dfddb82",
-            "filename": "oz9799.zip"
+            "filename": "oz9799.zip",
+            "members": ["oz9799/oz9799.csv"]
         },
         "phoenix_acs": {
             "url": "https://geodacenter.github.io/data-and-lab//data/phx2.zip",
@@ -537,23 +541,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.phoenix_acs",
             "description": "Phoenix American Community Survey Data (2010, 5-year averages)",
-            "nrows": 685,
-            "ncols": 17,
+            "geometry_type": "Polygon",
+            "nrows": 985,
+            "ncols": 18,
             "details": "https://geodacenter.github.io/data-and-lab//phx/",
             "hash": "b2f6e196bacb6f3fe1fc909af482e7e75b83d1f8363fc73038286364c13334ee",
-            "filename": "phx2.zip"
-        },
-        "pittsburgh": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/pittsburgh.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.pittsburgh",
-            "description": "Pittsburgh homicide locations",
-            "nrows": 143,
-            "ncols": 8,
-            "details": "https://geodacenter.github.io/data-and-lab//pitt93/",
-            "hash": "43ac971cf9fe53f95f843317741040e472ebe129fa134f4392f02b93ab5d7d4d",
-            "filename": "pittsburgh.zip"
+            "filename": "phx2.zip",
+            "members": ["phx/phx.gpkg"]
         },
         "police": {
             "url": "https://geodacenter.github.io/data-and-lab//data/police.zip",
@@ -561,11 +555,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.police",
             "description": "Police expenditures Mississippi counties",
+            "geometry_type": "Polygon",
             "nrows": 82,
-            "ncols": 21,
+            "ncols": 22,
             "details": "https://geodacenter.github.io/data-and-lab//police/",
             "hash": "596270d62dea8207001da84883ac265591e5de053f981c7491e7b5c738e9e9ff",
-            "filename": "police.zip"
+            "filename": "police.zip",
+            "members": ["police/police.gpkg"]
         },
         "sacramento1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/sacramento.zip",
@@ -573,11 +569,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.sacramento1",
             "description": "2000 Census Tract Data for Sacramento MSA",
+            "geometry_type": "Polygon",
             "nrows": 403,
-            "ncols": 30,
+            "ncols": 32,
             "details": "https://geodacenter.github.io/data-and-lab//sacramento1/",
             "hash": "72ddeb533cf2917dc1f458add7c6042b93c79b31316ae2d22f1c855a9da275f9",
-            "filename": "sacramento.zip"
+            "filename": "sacramento.zip",
+            "members": ["sacramento/sacramentot2.gpkg"]
         },
         "sacramento2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SacramentoMSA2.zip",
@@ -585,23 +583,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.sacramento2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Sacramento MSA",
+            "geometry_type": "Polygon",
             "nrows": 125,
-            "ncols": 53,
+            "ncols": 59,
             "details": "https://geodacenter.github.io/data-and-lab//sacramento2/",
             "hash": "3f6899efd371804ea8bfaf3cdfd3ed4753ea4d009fed38a57c5bbf442ab9468b",
-            "filename": "SacramentoMSA2.zip"
-        },
-        "sanfran_crime": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/SFCrime_July_Dec2012.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.sanfran_crime",
-            "description": "July-Dec 2012 crime incidents in San Francisco (points + area) - for CAST",
-            "nrows": 3384,
-            "ncols": 13,
-            "details": "https://geodacenter.github.io/data-and-lab//SFcrimes_vars/",
-            "hash": "a3cb7ac51875914389bee73aca6815244fca1d2461f97ef7b03f2ee9f66df74b",
-            "filename": "SFCrime_July_Dec2012.zip"
+            "filename": "SacramentoMSA2.zip",
+            "members": ["SacramentoMSA2/SacramentoMSA2.gpkg"]
         },
         "savannah1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SavannahMSA.zip",
@@ -609,11 +597,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.savannah1",
             "description": "2000 Census Tract Data for Savannah, GA MSA and counties",
+            "geometry_type": "Polygon",
             "nrows": 77,
-            "ncols": 30,
+            "ncols": 31,
             "details": "https://geodacenter.github.io/data-and-lab//savannah1/",
             "hash": "df48c228776d2122c38935b2ebbf4cbb90c0bacc68df01161e653aab960e4208",
-            "filename": "SavannahMSA.zip"
+            "filename": "SavannahMSA.zip",
+            "members": ["SavannahMSA/ga_final_census2.gpkg"]
         },
         "savannah2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SavannahMSA2.zip",
@@ -621,23 +611,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.savannah2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Savannah, GA MSA",
+            "geometry_type": "Polygon",
             "nrows": 24,
-            "ncols": 55,
+            "ncols": 60,
             "details": "https://geodacenter.github.io/data-and-lab//savannah2/",
             "hash": "5b22b84a8665434cb91e800a039337f028b888082b8ef7a26d77eb6cc9aea8c1",
-            "filename": "SavannahMSA2.zip"
-        },
-        "scotlip": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/scotlip.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.scotlip",
-            "description": "Male lip cancer in Scotland, 1975-80",
-            "nrows": 56,
-            "ncols": 11,
-            "details": "https://geodacenter.github.io/data-and-lab//scotlip/",
-            "hash": "b83e23d6ec294d6ca53f36f85f1dfb335ce1cb5bf4b85892b48072415cac0e83",
-            "filename": "scotlip.zip"
+            "filename": "SavannahMSA2.zip",
+            "members": ["SavannahMSA2/SavannahMSA2.gpkg"]
         },
         "seattle1": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SeattleMSA.zip",
@@ -645,11 +625,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.seattle1",
             "description": "2000 Census Tract Data for Seattle, WA MSA and counties",
+            "geometry_type": "Polygon",
             "nrows": 664,
-            "ncols": 30,
+            "ncols": 31,
             "details": "https://geodacenter.github.io/data-and-lab//seattle1/",
             "hash": "46fb75a30f0e7963e6108bdb19af4d7db4c72c3d5a020025cafa528c96e09daa",
-            "filename": "SeattleMSA.zip"
+            "filename": "SeattleMSA.zip",
+            "members": ["SeattleMSA/wa_final_census2.gpkg"]
         },
         "seattle2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/SeattleMSA2.zip",
@@ -657,11 +639,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.seattle2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Seattle, WA MSA",
+            "geometry_type": "Polygon",
             "nrows": 145,
-            "ncols": 59,
+            "ncols": 60,
             "details": "https://geodacenter.github.io/data-and-lab//seattle2/",
             "hash": "3dac2fa5b8c8dfa9dd5273a85de7281e06e18ab4f197925607f815f4e44e4d0c",
-            "filename": "SeattleMSA2.zip"
+            "filename": "SeattleMSA2.zip",
+            "members": ["SeattleMSA2/SeattleMSA2.gpkg"]
         },
         "sids": {
             "url": "https://geodacenter.github.io/data-and-lab//data/sids.zip",
@@ -669,11 +653,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.sids",
             "description": "North Carolina county SIDS death counts",
+            "geometry_type": "Polygon",
             "nrows": 100,
-            "ncols": 13,
+            "ncols": 15,
             "details": "https://geodacenter.github.io/data-and-lab//sids/",
             "hash": "e2f7b210b9a57839423fd170e47c02cf7a2602a480a1036bb0324e1112a4eaab",
-            "filename": "sids.zip"
+            "filename": "sids.zip",
+            "members": ["sids/sids.gpkg"]
         },
         "sids2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/sids2.zip",
@@ -681,23 +667,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.sids2",
             "description": "North Carolina county SIDS death counts and rates",
+            "geometry_type": "Polygon",
             "nrows": 100,
-            "ncols": 17,
+            "ncols": 19,
             "details": "https://geodacenter.github.io/data-and-lab//sids2/",
             "hash": "b5875ffbdb261e6fa75dc4580d67111ef1434203f2d6a5d63ffac16db3a14bd0",
-            "filename": "sids2.zip"
-        },
-        "snow": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/snow.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.snow",
-            "description": "John Snow & the 19th Century Cholera Epidemic",
-            "nrows": "missing",
-            "ncols": "missing",
-            "details": "https://geodacenter.github.io/data-and-lab//snow/",
-            "hash": "d974dbe3c16a31459e213556f4e4c5e3494db620615aa624104582cde0e2d83c",
-            "filename": "snow.zip"
+            "filename": "sids2.zip",
+            "members": ["sids2/sids2.gpkg"]
         },
         "south": {
             "url": "https://geodacenter.github.io/data-and-lab//data/south.zip",
@@ -705,11 +681,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.south",
             "description": "US Southern county homicides 1960-1990",
+            "geometry_type": "Polygon",
             "nrows": 1412,
-            "ncols": 69,
+            "ncols": 70,
             "details": "https://geodacenter.github.io/data-and-lab//south/",
             "hash": "8f151d99c643b187aad37cfb5c3212353e1bc82804a4399a63de369490e56a7a",
-            "filename": "south.zip"
+            "filename": "south.zip",
+            "members": ["south/south.gpkg"]
         },
         "spirals": {
             "url": "https://geodacenter.github.io/data-and-lab//data/spirals.csv",
@@ -717,7 +695,8 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.spirals",
             "description": "Synthetic spiral points",
-            "nrows": 301,
+            "geometry_type": "Point",
+            "nrows": 300,
             "ncols": 2,
             "details": "https://geodacenter.github.io/data-and-lab//spirals/",
             "hash": "3203b0a6db37c1207b0f1727c980814f541ce0a222597475f9c91540b1d372f1",
@@ -729,8 +708,9 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.stlouis",
             "description": "St Louis region county homicide counts and rates",
+            "geometry_type": "Polygon",
             "nrows": 78,
-            "ncols": 23,
+            "ncols": 24,
             "details": "https://geodacenter.github.io/data-and-lab//stlouis/",
             "hash": "181a17a12e9a2b2bfc9013f399e149da935e0d5cb95c3595128f67898c4365f3",
             "filename": "stlouis.zip"
@@ -741,11 +721,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.tampa1",
             "description": "2000 Census Tract Data for Tampa, FL MSA and counties",
+            "geometry_type": "Polygon",
             "nrows": 547,
-            "ncols": 30,
+            "ncols": 31,
             "details": "https://geodacenter.github.io/data-and-lab//tampa1/",
             "hash": "9a7ea0746138f62aa589e8377edafea48a7b1be0cdca2b38798ba21665bfb463",
-            "filename": "TampaMSA.zip"
+            "filename": "TampaMSA.zip",
+            "members": ["TampaMSA/tampa_final_census2.gpkg"]
         },
         "us_sdoh": {
             "url": "https://geodacenter.github.io/data-and-lab//data/us-sdoh-2014.zip",
@@ -753,11 +735,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.us_sdoh",
             "description": "2014 US Social Determinants of Health Data",
+            "geometry_type": "Polygon",
             "nrows": 71901,
-            "ncols": 25,
+            "ncols": 26,
             "details": "https://geodacenter.github.io/data-and-lab//us-sdoh/",
             "hash": "076701725c4b67248f79c8b8a40e74f9ad9e194d3237e1858b3d20176a6562a5",
-            "filename": "us-sdoh-2014.zip"
+            "filename": "us-sdoh-2014.zip",
+            "members": ["us-sdoh-2014/us-sdoh-2014.shp", "us-sdoh-2014/us-sdoh-2014.dbf", "us-sdoh-2014/us-sdoh-2014.shx", "us-sdoh-2014/us-sdoh-2014.prj"]
         }
     },
 
@@ -768,11 +752,13 @@
             "attribution": "Department of City Planning (DCP)",
             "name": "ny.bb",
             "description": "The borough boundaries of New York City clipped to the shoreline at mean high tide.",
+            "geometry_type": "Polygon",
             "details": "https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm",
             "nrows": 5,
             "ncols": 5,
             "hash": "26257f5a3c06765557b302f36774d4d21acb257aa8f9d4a4694d436432160051",
-            "filename": "nybb_22c.zip"
+            "filename": "nybb_22c.zip",
+            "members": ["nybb_22c/nybb.shp", "nybb_22c/nybb.shx", "nybb_22c/nybb.dbf", "nybb_22c/nybb.prj"]
         }
     }
 }
