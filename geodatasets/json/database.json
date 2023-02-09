@@ -6,6 +6,7 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.airbnb",
             "description": "Airbnb rentals, socioeconomics, and crime in Chicago",
+            "geometry_type": "Polygon",
             "nrows": 77,
             "ncols": 20,
             "details": "https://geodacenter.github.io/data-and-lab//airbnb/",
@@ -18,47 +19,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.atlanta",
             "description": "Atlanta, GA region homicide counts and rates",
+            "geometry_type": "Polygon",
             "nrows": 90,
             "ncols": 23,
             "details": "https://geodacenter.github.io/data-and-lab//atlanta_old/",
             "hash": "a33a76e12168fe84361e60c88a9df4856730487305846c559715c89b1a2b5e09",
-            "filename": "atlanta_hom.zip"
-        },
-        "baltimore": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/baltimore.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.baltimore",
-            "description": "Baltimore house sales prices and hedonics",
-            "nrows": 211,
-            "ncols": 17,
-            "details": "https://geodacenter.github.io/data-and-lab//baltim/",
-            "hash": "23f04f479026f33565fb84802f19c4142a5287c0a20072cb2ac1d3c145677b2c",
-            "filename": "baltimore.zip"
-        },
-        "bostonhsg": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/boston.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.bostonhsg",
-            "description": "Boston housing and neighborhood data",
-            "nrows": 506,
-            "ncols": 23,
-            "details": "https://geodacenter.github.io/data-and-lab//boston-housing/",
-            "hash": "ee6c3138e3b3f1989a7a28edb8a98eb4a5fa2835ee2d45d9bf4d5cd4ebbe76c7",
-            "filename": "boston.zip"
-        },
-        "buenosaires": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/buenosaires.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.buenosaires",
-            "description": "Electoral Data for 1999 Argentinean Elections",
-            "nrows": 209,
-            "ncols": 21,
-            "details": "https://geodacenter.github.io/data-and-lab//buenos-aires_old/",
-            "hash": "d011ba3d082eef8a0d694b14b4cef41546766621ae6aff1ce536d0a4f62e589e",
-            "filename": "buenosaires.zip"
+            "filename": "atlanta_hom.zip",
+            "members": ["atlanta_hom/atl_hom.geojson"]
         },
         "cars": {
             "url": "https://geodacenter.github.io/data-and-lab//data/Abandoned_Vehicles_Map.csv",
@@ -66,6 +33,7 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.cars",
             "description": "2011 abandoned vehicles in Chicago (311 complaints).",
+            "geometry_type": "Point",
             "nrows": 137867,
             "ncols": 21,
             "details": "https://geodacenter.github.io/data-and-lab//1-source-and-description/",
@@ -78,11 +46,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.charleston1",
             "description": "2000 Census Tract Data for Charleston, SC MSA and counties",
+            "geometry_type": "Polygon",
             "nrows": 117,
             "ncols": 30,
             "details": "https://geodacenter.github.io/data-and-lab//charleston-1_old/",
             "hash": "4a4fa9c8dd4231ae0b2f12f24895b8336bcab0c28c48653a967cffe011f63a7c",
-            "filename": "CharlestonMSA.zip"
+            "filename": "CharlestonMSA.zip",
+            "members": ["CharlestonMSA/sc_final_census2.gpkg"]
         },
         "charleston2": {
             "url": "https://geodacenter.github.io/data-and-lab//data/CharlestonMSA2.zip",
@@ -90,11 +60,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.charleston2",
             "description": "1998 and 2001 Zip Code Business Patterns (Census Bureau) for Charleston, SC MSA",
+            "geometry_type": "Polygon",
             "nrows": 44,
             "ncols": 97,
             "details": "https://geodacenter.github.io/data-and-lab//charleston2/",
             "hash": "056d5d6e236b5bd95f5aee26c77bbe7d61bd07db5aaf72866c2f545205c1d8d7",
-            "filename": "CharlestonMSA2.zip"
+            "filename": "CharlestonMSA2.zip",
+            "members": ["CharlestonMSA2/CharlestonMSA2.gpkg"]
         },
         "chicago_health": {
             "url": "https://geodacenter.github.io/data-and-lab//data/comarea.zip",
@@ -102,6 +74,7 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.chicago_health",
             "description": "Chicago Health + Socio-Economics",
+            "geometry_type": "Polygon",
             "nrows": 77,
             "ncols": 86,
             "details": "https://geodacenter.github.io/data-and-lab//comarea_vars/",
@@ -114,11 +87,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.chicago_commpop",
             "description": "Chicago Community Area Population Percent Change for 2000 and 2010",
+            "geometry_type": "Polygon",
             "nrows": 77,
             "ncols": 8,
             "details": "https://geodacenter.github.io/data-and-lab//commpop/",
             "hash": "1dbebb50c8ea47e2279ea819ef64ba793bdee2b88e4716bd6c6ec0e0d8e0e05b",
-            "filename": "chicago_commpop.zip"
+            "filename": "chicago_commpop.zip",
+            "members": ["chicago_commpop/chicago_commpop.geojson"]
         },
         "chile_labor": {
             "url": "https://geodacenter.github.io/data-and-lab//data/flma.zip",
@@ -126,11 +101,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.chile_labor",
             "description": "Labor Markets in Chile (1982-2002)",
+            "geometry_type": "Polygon",
             "nrows": 141,
             "ncols": 62,
             "details": "https://geodacenter.github.io/data-and-lab//FLMA/",
             "hash": "4777072268d0127b3d0be774f51d0f66c15885e9d3c92bc72c641a72f220796c",
-            "filename": "flma.zip"
+            "filename": "flma.zip",
+            "members": ["flma/FLMA.geojson"]
         },
         "cincinnati": {
             "url": "https://geodacenter.github.io/data-and-lab//data/walnuthills_updated.zip",
@@ -138,11 +115,13 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.cincinnati",
             "description": "2008 Cincinnati Crime + Socio-Demographics",
+            "geometry_type": "Polygon",
             "nrows": 457,
             "ncols": 89,
             "details": "https://geodacenter.github.io/data-and-lab//walnut_hills/",
             "hash": "d6871dd688bd14cf4710a218d721d34f6574456f2a14d5c5cfe5a92054ee9763",
-            "filename": "walnuthills_updated.zip"
+            "filename": "walnuthills_updated.zip",
+            "members": ["walnuthills_updated"]
         },
         "cleveland": {
             "url": "https://geodacenter.github.io/data-and-lab//data/cleveland.zip",
