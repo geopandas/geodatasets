@@ -29,7 +29,7 @@ def test_get_path():
 @pytest.mark.request
 def test_fetch():
     # clear cache
-    for data in ["airbnb.zip", "nybb_22c.zip", "boston.zip"]:
+    for data in ["airbnb.zip", "nybb_22c.zip", "nyc_neighborhoods.zip"]:
         in_cache = pooch.os_cache("geodatasets").joinpath(data)
         if Path(in_cache).exists():
             os.remove(in_cache)
@@ -37,12 +37,12 @@ def test_fetch():
     geodatasets.fetch("nybb")
     assert pooch.os_cache("geodatasets").joinpath("nybb_22c.zip").exists()
 
-    geodatasets.fetch(["geoda airbnb", "geoda bostonhsg"])
+    geodatasets.fetch(["geoda airbnb", "geoda atlanta"])
 
-    for data in ["airbnb.zip", "boston.zip"]:
-        assert pooch.os_cache("geodatasets").joinpath("nybb_22c.zip").exists()
+    for data in ["airbnb.zip", "atlanta_hom.zip"]:
+        assert pooch.os_cache("geodatasets").joinpath(data).exists()
 
     # cleanup
-    for data in ["airbnb.zip", "nybb_22c.zip", "boston.zip"]:
+    for data in ["airbnb.zip", "nybb_22c.zip", "atlanta_hom.zip"]:
         in_cache = pooch.os_cache("geodatasets").joinpath(data)
         os.remove(in_cache)

@@ -6,6 +6,8 @@ dependencies:
   # tests
   - pytest
   - pytest-cov
+  - geopandas-base
+  - pyogrio
   - pip
   - pip:
       - git+https://github.com/fatiando/pooch.git@main
