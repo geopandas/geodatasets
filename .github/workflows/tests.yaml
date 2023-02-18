@@ -21,6 +21,8 @@ jobs:
         include:
           - environment-file: ci/dev.yaml
             os: ubuntu-latest
+          - environment-file: ci/min.yaml
+            os: ubuntu-latest
     defaults:
       run:
         shell: bash -l {0}
