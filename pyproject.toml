@@ -39,7 +39,7 @@ include = [
 ]
 
 [tool.setuptools.package-data]
-myModule = ["json/providers.json"]
+json = ["json/providers.json"]
 
 [tool.coverage.run]
 omit = ["geodatasets/tests/*"]
