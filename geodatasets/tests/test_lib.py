@@ -41,7 +41,6 @@ def test_dir(data1):
 
 
 def test_expect_name_url_attribution():
-
     with pytest.raises(AttributeError, match="`name`, `url`, `hash`, `filename`"):
         Dataset({})
     with pytest.raises(AttributeError, match="`url`, `hash`, `filename`"):
@@ -104,7 +103,7 @@ def test_callable():
     # check that original item dict is not modified
     assert (
         data.ny.bb["hash"]
-        == "26257f5a3c06765557b302f36774d4d21acb257aa8f9d4a4694d436432160051"
+        == "a303be17630990455eb079777a6b31980549e9096d66d41ce0110761a7e2f92a"
     )
 
 

@@ -747,18 +747,18 @@
 
     "ny": {
         "bb": {
-            "url": "https://data.cityofnewyork.us/api/geospatial/tqmj-j8zm?method=export&format=Original",
+            "url": "https://www.nyc.gov/assets/planning/download/zip/data-maps/open-data/nybb_16a.zip",
             "license": "NA",
             "attribution": "Department of City Planning (DCP)",
             "name": "ny.bb",
-            "description": "The borough boundaries of New York City clipped to the shoreline at mean high tide.",
+            "description": "The borough boundaries of New York City clipped to the shoreline at mean high tide for 2016.",
             "geometry_type": "Polygon",
             "details": "https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm",
             "nrows": 5,
             "ncols": 5,
-            "hash": "26257f5a3c06765557b302f36774d4d21acb257aa8f9d4a4694d436432160051",
-            "filename": "nybb_22c.zip",
-            "members": ["nybb_22c/nybb.shp", "nybb_22c/nybb.shx", "nybb_22c/nybb.dbf", "nybb_22c/nybb.prj"]
+            "hash": "a303be17630990455eb079777a6b31980549e9096d66d41ce0110761a7e2f92a",
+            "filename": "nybb_16a.zip",
+            "members": ["nybb_16a/nybb.shp", "nybb_16a/nybb.shx", "nybb_16a/nybb.dbf", "nybb_16a/nybb.prj"]
         }
     },
 
