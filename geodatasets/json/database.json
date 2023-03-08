@@ -776,5 +776,20 @@
             "hash": "97b37b781cba30c2292122ba2bdfe2e156a791cefbdfedf611c8473facc6be50",
             "filename": "wise_large_rivers.zip"
         }
+    },
+    "naturalearth": {
+        "land": {
+            "url": "https://naciscdn.org/naturalearth/110m/physical/ne_110m_land.zip",
+            "license": "CC0",
+            "attribution": "Natural Earth",
+            "name": "naturalearth.land",
+            "description": "Land polygons including major islands in a 1:110m resolution.",
+            "geometry_type": "Polygon",
+            "details": "https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/",
+            "nrows": 127,
+            "ncols": 4,
+            "hash": "1926c621afd6ac67c3f36639bb1236134a48d82226dc675d3e3df53d02d2a3de",
+            "filename": "ne_110m_land.zip"
+        }
     }
 }
