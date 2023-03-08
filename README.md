@@ -61,7 +61,7 @@ Out[2]:
    ...
 ```
 
-There is also convenient top-level API. One to get only the URL:
+There is also a convenient top-level API. One to get only the URL:
 
 ```py
 In [3]: geodatasets.get_url("geoda airbnb")
