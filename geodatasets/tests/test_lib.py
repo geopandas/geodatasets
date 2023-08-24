@@ -1,6 +1,7 @@
 import pytest
 
 from geodatasets import Bunch, Dataset, data
+from geodatasets.lib import GEOMETRY_TYPES
 
 
 @pytest.fixture
@@ -134,3 +135,27 @@ def test_query_name():
 
     with pytest.raises(ValueError, match="No matching item found"):
         data.query_name("i don't exist")
+
+
+def test_filter_geometry():
+    options = [
+        "PoLyGoN",
+        "PoLy.GoN",
+        "POLY GON",
+        "poly-gon",
+        "poly_gon",
+        "POLY/gon",
+    ]
+
+    for option in options:
+        filtered = data.filter_by_geom_type(option)
+        filtered_values = list(filtered.values())
+
+        # ensure filtered values are the subset of flattened data
+        assert len(filtered_values) > 0 and len(filtered_values) < len(data.flatten())
+
+        for filtered_value in filtered_values:
+            assert filtered_value.geometry_type == 'Polygon'
+
+    with pytest.raises(ValueError, match=f"{GEOMETRY_TYPES}"):
+        data.filter_by_geom_type("not a geometry type")

@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import uuid
 
+GEOMETRY_TYPES = ['POINT', 'LINESTRING', 'POLYGON', 'MIXED']
 QUERY_NAME_TRANSLATION = str.maketrans({x: "" for x in "., -_/"})
 
 
@@ -117,6 +118,33 @@ class Bunch(dict):
             return xyz_flat_lower[name_clean]
 
         raise ValueError(f"No matching item found for the query '{name}'.")
+
+    def filter_by_geom_type(self, geometry_type: str) -> dict[str, Dataset]:
+        """Return dictionary of :class:`Dataset` objects filtered by geometry type
+
+        Returns dictionary of :class:`Dataset` objects from the :class:`Bunch`
+        filtered by `geometry_type` if found in the :list:`GEOMETRY_TYPES`
+
+        GEOMETRY_TYPES = ['POINT', 'LINESTRING', 'POLYGON', 'MIXED']
+
+        Parameters
+        ----------
+        geometry_type : str
+            Geometry type. The case does not matter.
+
+        Returns
+        -------
+         bunch_filtered : dict
+            dictionary of :class:`Dataset` objects
+        """
+        geometry_type_clean: str = geometry_type.translate(QUERY_NAME_TRANSLATION).upper()
+        if geometry_type_clean not in GEOMETRY_TYPES:
+            raise ValueError(f"No matching item found for the geometry_type "
+                             f"'{geometry_type}'. Use one of {GEOMETRY_TYPES}")
+
+        bunch_filtered: dict[str, Dataset] = {k: v for k, v in self.flatten().items()
+                                              if v.geometry_type.upper() == geometry_type_clean}
+        return bunch_filtered
 
 
 class Dataset(Bunch):
