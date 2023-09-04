@@ -136,20 +136,6 @@
             "hash": "49aeba03eb06bf9b0d9cddd6507eb4a226b7c7a7561145562885c5cddfaeaadf",
             "filename": "cleveland.zip"
         },
-        "columbus": {
-            "url": "https://geodacenter.github.io/data-and-lab//data/columbus.zip",
-            "license": "NA",
-            "attribution": "Center for Spatial Data Science, University of Chicago",
-            "name": "geoda.columbus",
-            "description": "Columbus neighborhood crime",
-            "geometry_type": "Polygon",
-            "nrows": 49,
-            "ncols": 21,
-            "details": "https://geodacenter.github.io/data-and-lab//columbus/",
-            "hash": "cf3bde1a32b31c48a63bc513587a1f8d310ecae5de9cae460dc9e66fe5a65e4d",
-            "filename": "columbus.zip",
-            "members": ["columbus/columbus.geojson"]
-        },
         "grid100": {
             "url": "https://geodacenter.github.io/data-and-lab//data/grid100.zip",
             "license": "NA",
