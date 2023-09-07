@@ -8,7 +8,9 @@ from __future__ import annotations
 
 import json
 import uuid
+from typing import Callable
 
+GEOMETRY_TYPES = ["POINT", "LINESTRING", "POLYGON", "MIXED"]
 QUERY_NAME_TRANSLATION = str.maketrans({x: "" for x in "., -_/"})
 
 
@@ -28,7 +30,6 @@ class Bunch(dict):
         return self.keys()
 
     def _repr_html_(self, inside=False):
-
         children = ""
         for key in self.keys():
             if isinstance(self[key], Dataset):
@@ -118,6 +119,139 @@ class Bunch(dict):
 
         raise ValueError(f"No matching item found for the query '{name}'.")
 
+    def filter(
+        self,
+        keyword: str | None = None,
+        name: str | None = None,
+        geometry_type: str | None = None,
+        function: Callable[[Dataset], bool] = None,
+    ) -> Bunch:
+        """Return a subset of the :class:`Bunch` matching the filter conditions
+
+        Each :class:`Dataset` within a :class:`Bunch` is checked against one or
+        more specified conditions and kept if they are satisfied or removed if at least
+        one condition is not met.
+
+        Parameters
+        ----------
+        keyword : str (optional)
+            Condition returns ``True`` if ``keyword`` string is present in any string
+            value in a :class:`Dataset` object.
+            The comparison is not case sensitive.
+        name : str (optional)
+            Condition returns ``True`` if ``name`` string is present in
+            the name attribute of :class:`Dataset` object.
+            The comparison is not case sensitive.
+        geometry_type : str (optional)
+            Condition returns ``True`` if :meth:`Dataset.geometry_type` is
+            matches the ``geometry_type``.
+            Possible options are ``["Point", "LineString", "Polygon", "Mixed"]``.
+            The comparison is not case sensitive.
+        function : callable (optional)
+            Custom function taking :class:`Dataset` as an argument and returns
+            bool. If ``function`` is given, other parameters are ignored.
+
+        Returns
+        -------
+        filtered : Bunch
+
+        Examples
+        --------
+        >>> from geodatasets import data
+
+        You can filter all Point datasets:
+
+        >>> points = data.filter(geometry_type="Point")
+
+        Or all datasets with ``chicago`` in the name:
+
+        >>> chicago_datasets = data.filter(name="chicago")
+
+        You can use keyword search to find all datasets in a CSV format:
+
+        >>> csv_datasets = data.filter(keyword="csv")
+
+        You can combine multiple conditions to find datasets based with ``chicago`` in
+        name of Polygon geometry type:
+
+        >>> chicago_polygons = data.filter(name="chicago", geometry_type="Polygon")
+
+        You can also pass custom function that takes :class:`Dataset` and returns
+        boolean value. You can then find all datasets with ``nrows`` smaller than
+        100:
+
+        >>> def small_data(dataset):
+        ...    if hasattr(dataset, "nrows") and dataset.nrows < 100:
+        ...        return True
+        ...    return False
+        >>> small = data.filter(function=small_data)
+        """
+
+        def _validate(dataset, keyword, name, geometry_type):
+            cond = []
+
+            if keyword is not None:
+                keyword_match = False
+                for v in dataset.values():
+                    if isinstance(v, str) and keyword.lower() in v.lower():
+                        keyword_match = True
+                        break
+                cond.append(keyword_match)
+
+            if name is not None:
+                name_match = False
+                if name.lower() in dataset.name.lower():
+                    name_match = True
+                cond.append(name_match)
+
+            if geometry_type is not None:
+                geom_type_match = False
+                if (
+                    dataset.geometry_type.upper()
+                    == geometry_type.translate(QUERY_NAME_TRANSLATION).upper()
+                ):
+                    geom_type_match = True
+                cond.append(geom_type_match)
+
+            return all(cond)
+
+        def _filter_bunch(bunch, keyword, name, geometry_type, function):
+            new = Bunch()
+            for key, value in bunch.items():
+                if isinstance(value, Dataset):
+                    if function is None:
+                        if _validate(
+                            value,
+                            keyword=keyword,
+                            name=name,
+                            geometry_type=geometry_type,
+                        ):
+                            new[key] = value
+                    else:
+                        if function(value):
+                            new[key] = value
+
+                else:
+                    filtered = _filter_bunch(
+                        value,
+                        keyword=keyword,
+                        name=name,
+                        geometry_type=geometry_type,
+                        function=function,
+                    )
+                    if filtered:
+                        new[key] = filtered
+
+            return new
+
+        return _filter_bunch(
+            self,
+            keyword=keyword,
+            name=name,
+            geometry_type=geometry_type,
+            function=function,
+        )
+
 
 class Dataset(Bunch):
     """
@@ -178,7 +312,6 @@ class Dataset(Bunch):
 
 
 def _load_json(f):
-
     data = json.loads(f)
 
     items = Bunch()

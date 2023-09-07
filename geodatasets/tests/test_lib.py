@@ -1,6 +1,7 @@
 import pytest
 
 from geodatasets import Bunch, Dataset, data
+from geodatasets.lib import GEOMETRY_TYPES
 
 
 @pytest.fixture
@@ -10,6 +11,7 @@ def data1():
         attribution="(C) geodatasets",
         name="my_public_data",
         filename="data.zip",
+        geometry_type="Polygon",
         hash="qwertyuiopasdfghjklzxcvbnm1234567890",
     )
 
@@ -21,6 +23,7 @@ def data2():
         attribution="(C) geodatasets",
         name="my_public_data2",
         filename="data2.json",
+        geometry_type="Point",
         hash="qwertyuiopasdfghjklzxcvbnm1234567890",
     )
 
@@ -37,7 +40,9 @@ def test_bunch(
 
 
 def test_dir(data1):
-    assert dir(data1) == sorted(["url", "attribution", "name", "filename", "hash"])
+    assert dir(data1) == sorted(
+        ["url", "attribution", "name", "filename", "geometry_type", "hash"]
+    )
 
 
 def test_expect_name_url_attribution():
@@ -134,3 +139,20 @@ def test_query_name():
 
     with pytest.raises(ValueError, match="No matching item found"):
         data.query_name("i don't exist")
+
+
+def test_filter(test_bunch):
+    assert len(test_bunch.filter(keyword="json").flatten()) == 1
+    assert len(test_bunch.filter(name="data2").flatten()) == 1
+    assert len(test_bunch.filter(geometry_type="Point").flatten()) == 1
+    assert (
+        len(test_bunch.filter(keyword="json", geometry_type="Polygon").flatten()) == 0
+    )
+    assert len(test_bunch.filter(name="nonsense").flatten()) == 0
+
+    def custom(provider):
+        if hasattr(provider, "filename") and provider.filename == "data.zip":
+            return True
+        return False
+
+    assert len(test_bunch.filter(function=custom).flatten()) == 1
