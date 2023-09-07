@@ -11,6 +11,7 @@ def data1():
         attribution="(C) geodatasets",
         name="my_public_data",
         filename="data.zip",
+        geometry_type="Polygon",
         hash="qwertyuiopasdfghjklzxcvbnm1234567890",
     )
 
@@ -22,6 +23,7 @@ def data2():
         attribution="(C) geodatasets",
         name="my_public_data2",
         filename="data2.json",
+        geometry_type="Point",
         hash="qwertyuiopasdfghjklzxcvbnm1234567890",
     )
 
@@ -38,7 +40,9 @@ def test_bunch(
 
 
 def test_dir(data1):
-    assert dir(data1) == sorted(["url", "attribution", "name", "filename", "hash"])
+    assert dir(data1) == sorted(
+        ["url", "attribution", "name", "filename", "geometry_type", "hash"]
+    )
 
 
 def test_expect_name_url_attribution():
@@ -137,25 +141,18 @@ def test_query_name():
         data.query_name("i don't exist")
 
 
-def test_filter_geometry():
-    options = [
-        "PoLyGoN",
-        "PoLy.GoN",
-        "POLY GON",
-        "poly-gon",
-        "poly_gon",
-        "POLY/gon",
-    ]
+def test_filter(test_bunch):
+    assert len(test_bunch.filter(keyword="json").flatten()) == 1
+    assert len(test_bunch.filter(name="data2").flatten()) == 1
+    assert len(test_bunch.filter(geometry_type="Point").flatten()) == 1
+    assert (
+        len(test_bunch.filter(keyword="json", geometry_type="Polygon").flatten()) == 0
+    )
+    assert len(test_bunch.filter(name="nonsense").flatten()) == 0
 
-    for option in options:
-        filtered = data.filter_by_geom_type(option)
-        filtered_values = list(filtered.values())
+    def custom(provider):
+        if hasattr(provider, "filename") and provider.filename == "data.zip":
+            return True
+        return False
 
-        # ensure filtered values are the subset of flattened data
-        assert len(filtered_values) > 0 and len(filtered_values) < len(data.flatten())
-
-        for filtered_value in filtered_values:
-            assert filtered_value.geometry_type == 'Polygon'
-
-    with pytest.raises(ValueError, match=f"{GEOMETRY_TYPES}"):
-        data.filter_by_geom_type("not a geometry type")
+    assert len(test_bunch.filter(function=custom).flatten()) == 1
