@@ -239,7 +239,7 @@
             "attribution": "Center for Spatial Data Science, University of Chicago",
             "name": "geoda.home_sales",
             "description": "2014-15 Home Sales in King County, WA",
-            "geometry_type": "Polygon",
+            "geometry_type": "Point",
             "nrows": 21613,
             "ncols": 22,
             "details": "https://geodacenter.github.io/data-and-lab//KingCounty-HouseSales2015/",
