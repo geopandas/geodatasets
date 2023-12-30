@@ -13,12 +13,12 @@ authors = [
 maintainers = [
     {name = "geodatasets contributors"},
 ]
-license = {text = "-Clause BSD"}
+license = { text = "BSD 3-Clause" }
 description = "Spatial data examples"
 readme = "README.md"
 classifiers = [
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Topic :: Scientific/Engineering :: GIS",
