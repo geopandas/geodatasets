@@ -763,6 +763,36 @@
             "filename": "wise_large_rivers.zip"
         }
     },
+
+    "abs": {
+        "australia": {
+            "url": "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files/AUS_2021_AUST_SHP_GDA2020.zip",
+            "license": "CC BY 4.0",
+            "attribution": "Australian Bureau of Statistics (ABS)",
+            "name": "abs.australia",
+            "description": "Australia land polygon including Norfolk Island, the Territory of Christmas Island, and the Territory of Cocos (Keeling) Islands.",
+            "geometry_type": "Polygon",
+            "nrows": 2,
+            "ncols": 7,
+            "details": "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files",
+            "hash": "086752a6b0b3978247be201f02e02cd4e3c4f36d4f4ca74802e6831083b67129",
+            "filename": "AUS_2021_AUST_SHP_GDA2020.zip"
+        },
+        "australia_states_territories": {
+            "url": "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files/STE_2021_AUST_SHP_GDA2020.zip",
+            "license": "CC BY 4.0",
+            "attribution": "Australian Bureau of Statistics (ABS)",
+            "name": "abs.australia_states_territories",
+            "description": "Australian state and territory boundaries.",
+            "geometry_type": "Polygon",
+            "nrows": 10,
+            "ncols": 9,
+            "details": "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files",
+            "hash":"d9b7f735de6085b37414faf011f796dda3c7f768c55e9dce01f96e790f399a21",
+            "filename": "STE_2021_AUST_SHP_GDA2020.zip"
+        }
+    },
+
     "naturalearth": {
         "land": {
             "url": "https://naciscdn.org/naturalearth/110m/physical/ne_110m_land.zip",
