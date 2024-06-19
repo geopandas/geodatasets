@@ -10,6 +10,13 @@ on:
   schedule:
     - cron: "59 23 * * 3"
 
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Manual test execution
+        default: test
+        required: false
+
 jobs:
   Tests:
     name: ${{ matrix.os }}, ${{ matrix.environment-file }}
@@ -29,14 +36,13 @@ jobs:
 
     steps:
       - name: checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: setup micromamba
-        uses: mamba-org/provision-with-micromamba@main
+        uses: mamba-org/setup-micromamba@main
         with:
           environment-file: ${{ matrix.environment-file }}
           micromamba-version: "latest"
-          channel-priority: "flexible"
 
       - name: Install geodatasets
         run: pip install .
@@ -48,4 +54,4 @@ jobs:
         run: pytest -v . -m "request" --cov=geodatasets --cov-append --cov-report term-missing --cov-report xml --color=yes
         if: matrix.os == 'ubuntu-latest' && matrix.environment-file == 'ci/latest.yaml'
 
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
