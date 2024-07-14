@@ -807,5 +807,21 @@
             "hash": "1926c621afd6ac67c3f36639bb1236134a48d82226dc675d3e3df53d02d2a3de",
             "filename": "ne_110m_land.zip"
         }
+    },
+
+    "opendatasoft": {
+        "world-administrative-boundaries": {
+            "url": "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/world-administrative-boundaries/exports/shp?lang=en&timezone=Europe%2FBerlin",
+            "license": "Open Government Licence v3.0",
+            "attribution": "World Food Programme (UN agency)",
+            "name": "opendatasoft.world-administrative-boundaries",
+            "description": "Administrative boundaries of world countries",
+            "geometry_type": "Polygon",
+            "details": "https://public.opendatasoft.com/explore/dataset/world-administrative-boundaries/information/?location=2,34.16695,1.75538&basemap=jawg.light",
+            "nrows": 256,
+            "ncols": 8,
+            "hash": "d3498f0f463050e692ae6017e5cd2e5ddc088b681db5625dc7709b3d1fc07fb6",
+            "filename": "world-administrative-boundaries.zip"
+        }
     }
 }
