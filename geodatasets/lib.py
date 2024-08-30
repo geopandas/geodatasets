@@ -10,6 +10,8 @@ import json
 import uuid
 from typing import Callable
 
+import pooch
+
 GEOMETRY_TYPES = ["POINT", "LINESTRING", "POLYGON", "MIXED"]
 QUERY_NAME_TRANSLATION = str.maketrans({x: "" for x in "., -_/"})
 
@@ -283,6 +285,34 @@ class Dataset(Bunch):
     def copy(self, **kwargs) -> Dataset:
         new = Dataset(self)  # takes a copy preserving the class
         return new
+
+    @property
+    def path(self) -> str:
+        """Get the absolute path to a file in the local storage.
+
+        If it’s not in the local storage, it will be downloaded.
+
+        For Datasets containing multiple files, the archive is automatically extracted.
+
+        Returns
+        -------
+        str
+            loacal path
+        """
+        from .api import CACHE
+
+        if "members" in self.keys():
+            unzipped_files = CACHE.fetch(
+                self.filename, processor=pooch.Unzip(members=self.members)
+            )
+            if len(unzipped_files) == 1:
+                return unzipped_files[0]
+            elif len(unzipped_files) > 1:  # shapefile
+                return [f for f in unzipped_files if f.endswith(".shp")][0]
+            else:
+                raise
+
+        return CACHE.fetch(self.filename)
 
     def _repr_html_(self, inside=False):
         item_info = ""

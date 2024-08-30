@@ -1,3 +1,7 @@
+import os
+from pathlib import Path
+
+import pooch
 import pytest
 
 from geodatasets import Bunch, Dataset, data
@@ -156,3 +160,15 @@ def test_filter(test_bunch):
         return False
 
     assert len(test_bunch.filter(function=custom).flatten()) == 1
+
+
+@pytest.mark.request
+def test_get_path():
+    in_cache = pooch.os_cache("geodatasets").joinpath("nybb_16a.zip")
+    if Path(in_cache).exists():
+        os.remove(in_cache)
+
+    assert Path(data.ny.bb.path).exists()
+
+    # cleanup
+    os.remove(in_cache)
