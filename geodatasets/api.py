@@ -84,19 +84,7 @@ def get_path(name):
     '/Users/martin/Library/Caches/geodatasets/airbnb.zip'
     """
     dataset = data.query_name(name)
-    if "members" in dataset.keys():
-        unzipped_files = CACHE.fetch(
-            dataset.filename, processor=pooch.Unzip(members=dataset.members)
-        )
-        if len(unzipped_files) == 1:
-            return unzipped_files[0]
-        elif len(unzipped_files) > 1:  # shapefile
-            return [f for f in unzipped_files if f.endswith(".shp")][0]
-        else:
-            raise
-
-    else:
-        return CACHE.fetch(dataset.filename)
+    return dataset.path
 
 
 def fetch(name):
