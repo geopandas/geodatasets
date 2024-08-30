@@ -27,10 +27,11 @@ Database-level API
 
 The database of dataset metadata is handled via custom dict-based classes.
 
-.. class:: Dataset
+.. autoclass:: Dataset
+   :members: path
 
    A dict with attribute-access and that can be called to update keys.
 
 .. autoclass:: Bunch
    :exclude-members: clear, copy, fromkeys, get, items, keys, pop, popitem, setdefault, update, values
-   :members: filter, flatten, query_name, path
+   :members: filter, flatten, query_name
