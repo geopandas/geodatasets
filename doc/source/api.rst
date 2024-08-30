@@ -33,4 +33,4 @@ The database of dataset metadata is handled via custom dict-based classes.
 
 .. autoclass:: Bunch
    :exclude-members: clear, copy, fromkeys, get, items, keys, pop, popitem, setdefault, update, values
-   :members: filter, flatten, query_name
+   :members: filter, flatten, query_name, path
