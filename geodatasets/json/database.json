@@ -794,6 +794,45 @@
     },
 
     "naturalearth": {
+        "cities": {
+            "url": "https://naciscdn.org/naturalearth/110m/cultural/ne_110m_populated_places_simple.zip",
+            "license": "CC0",
+            "attribution": "Natural Earth",
+            "name": "naturalearth.cities",
+            "description": "Point symbols with name attributes of all admin-0 capitals and some other major cities.",
+            "geometry_type": "Point",
+            "details": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-populated-places/",
+            "nrows": 243,
+            "ncols": 32,
+            "hash": "3f3d99a9a5d84605bb3be07b94c9122b4d69d7545de478b314d75f5b0742afdf",
+            "filename": "ne_110m_populated_places_simple.zip"
+        },
+        "countries": {
+            "url": "https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip",
+            "license": "CC0",
+            "attribution": "Natural Earth",
+            "name": "naturalearth.countries",
+            "description": "Country polygons distinguishing between metropolitan (homeland) and independent and semi-independent portions of sovereign states in a 1:110m resolution.",
+            "geometry_type": "Polygon",
+            "details": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/",
+            "nrows": 177,
+            "ncols": 169,
+            "hash": "0f243aeac8ac6cf26f0417285b0bd33ac47f1b5bdb719fd3e0df37d03ea37110",
+            "filename": "ne_110m_admin_0_countries.zip"
+        },
+        "lakes": {
+            "url": "https://naciscdn.org/naturalearth/110m/physical/ne_110m_lakes.zip",
+            "license": "CC0",
+            "attribution": "Natural Earth",
+            "name": "naturalearth.lakes",
+            "description": "Major natural and artificial lakes polygons.",
+            "geometry_type": "Polygon",
+            "details": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/",
+            "nrows": 24,
+            "ncols": 38,
+            "hash": "f2eed3c738a93010770acb0ba44273ea6a83b053641588bc902d9d6fd1cdafcb",
+            "filename": "ne_110m_lakes.zip"
+        },
         "land": {
             "url": "https://naciscdn.org/naturalearth/110m/physical/ne_110m_land.zip",
             "license": "CC0",
@@ -806,6 +845,23 @@
             "ncols": 4,
             "hash": "1926c621afd6ac67c3f36639bb1236134a48d82226dc675d3e3df53d02d2a3de",
             "filename": "ne_110m_land.zip"
+        }
+    },
+
+    "hydrosheds": {
+        "hydrolakes": {
+            "url": "https://data.hydrosheds.org/file/hydrolakes/HydroLAKES_polys_v10_shp.zip",
+            "license": "CC BY 4.0",
+            "attribution": "HydroSHEDS",
+            "name": "hydrosheds.hydrolakes",
+            "description": "Shoreline polygons of all global lakes with a surface area of at least 10 ha.",
+            "geometry_type": "Polygon",
+            "details": "https://www.hydrosheds.org/products/hydrolakes",
+            "nrows": 1427688,
+            "ncols": 22,
+            "hash": "9ef63498569dd7ccd0b8d8852da026e009a75f42d293f00e483f3b9fcfe8e1f9",
+            "filename": "HydroLAKES_polys_v10_shp.zip",
+            "members": ["HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.shp", "HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.shx", "HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.dbf", "HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.prj"]
         }
     }
 }
