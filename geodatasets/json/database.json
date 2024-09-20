@@ -1052,6 +1052,32 @@
             "ncols": 9,
             "hash": "4e4c2bfd72e3abfe240155ee6952e8235ed75aa21c39868c360e95e70c39f438",
             "filename": "wheat.gpkg"
+        },
+        "zion": {
+            "url": "https://github.com/Nowosad/spDataLarge/raw/refs/heads/master/inst/vector/zion.gpkg",
+            "license": "CC0",
+            "attribution": "spDataLarge",
+            "name": "spdata.zion",
+            "description": "The borders of Zion National Park",
+            "geometry_type": "Polygon",
+            "details": "https://jakubnowosad.com/spDataLarge/reference/zion.gpkg.html",
+            "nrows": 1,
+            "ncols": 12,
+            "hash": "03b8584ae4f4e329c0626749596733e07158cf503b5ae8590af88fa70e9d6290",
+            "filename": "zion.gpkg"
+        },
+        "zion_points": {
+            "url": "https://github.com/Nowosad/spDataLarge/raw/refs/heads/master/inst/vector/zion_points.gpkg",
+            "license": "CC0",
+            "attribution": "spDataLarge",
+            "name": "spdata.zion_points",
+            "description": "Dataset containing 30 randomly located points in the Zion National Park",
+            "geometry_type": "Point",
+            "details": "https://jakubnowosad.com/spDataLarge/reference/zion_points.gpkg.html",
+            "nrows": 30,
+            "ncols": 1,
+            "hash": "c69683c8a1a9775b0b77689ecadbbec0251bdd603633822d0c85282b41fc9bc4",
+            "filename": "zion_points.gpkg"
         }
     }
 }
