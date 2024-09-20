@@ -986,7 +986,7 @@
             "nrows": 49,
             "ncols": 21,
             "hash": "8c7cf24780306d731b48095d10567f14c91ddb2278a976d42425c2cbe46624be",
-            "filename": "boston_tracts.gpkg"
+            "filename": "columbus.gpkg"
         },
         "cycle_hire": {
             "url": "https://github.com/Nowosad/spData/raw/refs/heads/master/inst/shapes/cycle_hire.geojson",
