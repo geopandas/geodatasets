@@ -794,6 +794,32 @@
     },
 
     "naturalearth": {
+        "cities": {
+            "url": "https://naciscdn.org/naturalearth/110m/cultural/ne_110m_populated_places_simple.zip",
+            "license": "CC0",
+            "attribution": "Natural Earth",
+            "name": "naturalearth.cities",
+            "description": "Point symbols with name attributes of all admin-0 capitals and some other major cities.",
+            "geometry_type": "Point",
+            "details": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-populated-places/",
+            "nrows": 243,
+            "ncols": 32,
+            "hash": "3f3d99a9a5d84605bb3be07b94c9122b4d69d7545de478b314d75f5b0742afdf",
+            "filename": "ne_110m_populated_places_simple.zip"
+        },
+        "lakes": {
+            "url": "https://naciscdn.org/naturalearth/110m/physical/ne_110m_lakes.zip",
+            "license": "CC0",
+            "attribution": "Natural Earth",
+            "name": "naturalearth.lakes",
+            "description": "Major natural and artificial lakes polygons.",
+            "geometry_type": "Polygon",
+            "details": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/",
+            "nrows": 24,
+            "ncols": 38,
+            "hash": "f2eed3c738a93010770acb0ba44273ea6a83b053641588bc902d9d6fd1cdafcb",
+            "filename": "ne_110m_lakes.zip"
+        },
         "land": {
             "url": "https://naciscdn.org/naturalearth/110m/physical/ne_110m_land.zip",
             "license": "CC0",
