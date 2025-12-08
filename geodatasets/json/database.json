@@ -853,13 +853,13 @@
     },
     "eea": {
         "large_rivers": {
-            "url": "https://www.eea.europa.eu/data-and-maps/data/wise-large-rivers-and-large-lakes/zipped-shapefile-with-wise-large-rivers-vector-line/zipped-shapefile-with-wise-large-rivers-vector-line/at_download/file",
+            "url": "https://zenodo.org/records/17857144/files/wise_large_rivers.zip?download=1",
             "license": "ODC-by",
             "attribution": "European Environmental Agency",
             "name": "eea.large_rivers",
             "description": "Large rivers in Europe that have a catchment area large than 50,000 km2.",
             "geometry_type": "LineString",
-            "details": "https://www.eea.europa.eu/data-and-maps/data/wise-large-rivers-and-large-lakes",
+            "details": "https://doi.org/10.5281/zenodo.17857143",
             "nrows": 20,
             "ncols": 3,
             "hash": "97b37b781cba30c2292122ba2bdfe2e156a791cefbdfedf611c8473facc6be50",
