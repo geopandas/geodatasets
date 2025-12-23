@@ -853,7 +853,7 @@
     },
     "eea": {
         "large_rivers": {
-            "url": "https://zenodo.org/records/17857144/files/wise_large_rivers.zip?download=1",
+            "url": "https://github.com/geopandas/geodatasets/raw/refs/heads/main/data_backup/wise_large_rivers.zip",
             "license": "ODC-by",
             "attribution": "European Environmental Agency",
             "name": "eea.large_rivers",
