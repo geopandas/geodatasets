@@ -1090,6 +1090,8 @@
             "attribution": "Eurostat/GISCO",
             "description": "NUTS 2024 statistical regions (RG polygons), scale 1:10M, EPSG:3035 (ETRS89 / LAEA Europe).",
             "geometry_type": "Polygon",
+            "nrows": 1798,
+            "ncols": 9,
             "details": "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units"
         },
         "nuts_lb_2024_3035": {
@@ -1101,6 +1103,8 @@
             "attribution": "Eurostat/GISCO",
             "description": "NUTS 2024 label points (LB), EPSG:3035 (ETRS89 / LAEA Europe).",
             "geometry_type": "Point",
+            "nrows": 1798,
+            "ncols": 9,
             "details": "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units"
         }
     }
