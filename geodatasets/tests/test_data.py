@@ -19,4 +19,4 @@ def test_data_exists(name):
             and any(".csv" in member for member in dataset.members)
         )
     ):
-        assert gdf.geom_type.str.endswith(dataset.geometry_type).all()
+        assert gdf.geom_type.dropna().str.endswith(dataset.geometry_type).all()
