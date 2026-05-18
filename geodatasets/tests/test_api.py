@@ -10,7 +10,7 @@ def test_get_url():
     url = geodatasets.get_url("nybb")
     assert (
         url
-        == "https://www.nyc.gov/assets/planning/download/zip/data-maps/open-data/nybb_16a.zip"  # noqa
+        == "https://github.com/geopandas/geodatasets/raw/refs/heads/main/data_backup/nybb_16a.zip"  # noqa
     )
 
 
