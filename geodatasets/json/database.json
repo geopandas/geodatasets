@@ -832,7 +832,7 @@
     },
     "ny": {
         "bb": {
-            "url": "https://www.nyc.gov/assets/planning/download/zip/data-maps/open-data/nybb_16a.zip",
+            "url": "https://github.com/geopandas/geodatasets/raw/refs/heads/main/data_backup/nybb_16a.zip",
             "license": "NA",
             "attribution": "Department of City Planning (DCP)",
             "name": "ny.bb",
