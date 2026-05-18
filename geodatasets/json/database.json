@@ -1084,7 +1084,7 @@
         "nuts_rg_10m_2024_3035": {
             "name": "eurostat.nuts_rg_10m_2024_3035",
             "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/gpkg/NUTS_RG_10M_2024_3035.gpkg",
-            "hash": "8628c97f0f8b0812d3d4c1ac0fe6ccc2c609df728a21127a1a288c60f9875e1f",
+            "hash": "bc3ebfa3d12455de7090a32356e8f857183106ab0c17544db4ec82c7126f5134",
             "filename": "NUTS_RG_10M_2024_3035.gpkg",
             "license": "Eurostat/GISCO (see terms; attribution required)",
             "attribution": "Eurostat/GISCO",
@@ -1097,7 +1097,7 @@
         "nuts_lb_2024_3035": {
             "name": "eurostat.nuts_lb_2024_3035",
             "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/gpkg/NUTS_LB_2024_3035.gpkg",
-            "hash": "1658bebb053f2cf61c0465ec214f50d0952ba9ae1dcb48665831aecddba04a2e",
+            "hash": "15f5c71d412ad18afcfb04d9f97accf071bb49e20392d0e2a602b2246184daff",
             "filename": "NUTS_LB_2024_3035.gpkg",
             "license": "Eurostat/GISCO (see terms; attribution required)",
             "attribution": "Eurostat/GISCO",
