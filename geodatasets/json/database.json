@@ -1079,33 +1079,5 @@
             "hash": "c69683c8a1a9775b0b77689ecadbbec0251bdd603633822d0c85282b41fc9bc4",
             "filename": "zion_points.gpkg"
         }
-    },
-    "eurostat": {
-        "nuts_rg_10m_2024_3035": {
-            "name": "eurostat.nuts_rg_10m_2024_3035",
-            "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/gpkg/NUTS_RG_10M_2024_3035.gpkg",
-            "hash": "bc3ebfa3d12455de7090a32356e8f857183106ab0c17544db4ec82c7126f5134",
-            "filename": "NUTS_RG_10M_2024_3035.gpkg",
-            "license": "Eurostat/GISCO (see terms; attribution required)",
-            "attribution": "Eurostat/GISCO",
-            "description": "NUTS 2024 statistical regions (RG polygons), scale 1:10M, EPSG:3035 (ETRS89 / LAEA Europe).",
-            "geometry_type": "Polygon",
-            "nrows": 1798,
-            "ncols": 18,
-            "details": "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units"
-        },
-        "nuts_lb_2024_3035": {
-            "name": "eurostat.nuts_lb_2024_3035",
-            "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/gpkg/NUTS_LB_2024_3035.gpkg",
-            "hash": "15f5c71d412ad18afcfb04d9f97accf071bb49e20392d0e2a602b2246184daff",
-            "filename": "NUTS_LB_2024_3035.gpkg",
-            "license": "Eurostat/GISCO (see terms; attribution required)",
-            "attribution": "Eurostat/GISCO",
-            "description": "NUTS 2024 label points (LB), EPSG:3035 (ETRS89 / LAEA Europe).",
-            "geometry_type": "Point",
-            "nrows": 1798,
-            "ncols": 20,
-            "details": "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units"
-        }
     }
 }
