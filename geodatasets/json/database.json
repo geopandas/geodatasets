@@ -828,6 +828,127 @@
                 "us-sdoh-2014/us-sdoh-2014.shx",
                 "us-sdoh-2014/us-sdoh-2014.prj"
             ]
+        },
+        "chicago_cca": {
+            "url": "https://geodacenter.github.io/data-and-lab//data/Chi-CCA.zip",
+            "license": "NA",
+            "attribution": "Center for Spatial Data Science, University of Chicago",
+            "name": "geoda.chicago_cca",
+            "description": "Socio-economic snapshot for Chicago Community Areas in 2020",
+            "geometry_type": "Polygon",
+            "nrows": 77,
+            "ncols": 233,
+            "details": "https://geodacenter.github.io/data-and-lab//Chi-CCA/",
+            "hash": "3c36b8e567ef8c7b984ee029246f29f87a264ae1d8472610f23db032cbf1dd85",
+            "filename": "Chi-CCA.zip",
+            "members": [
+                "Chi_CCA/Chicago_2020_sdoh.dbf",
+                "Chi_CCA/Chicago_2020_sdoh.prj",
+                "Chi_CCA/Chicago_2020_sdoh.shp",
+                "Chi_CCA/Chicago_2020_sdoh.shx"
+            ]
+        },
+        "chicago_carjackings": {
+            "url": "https://geodacenter.github.io/data-and-lab//data/Chi_Carjackings.zip",
+            "license": "NA",
+            "attribution": "Center for Spatial Data Science, University of Chicago",
+            "name": "geoda.chicago_carjackings",
+            "description": "Point locations of carjackings in 2020 Chicago",
+            "geometry_type": "Point",
+            "nrows": 1412,
+            "ncols": 16,
+            "details": "https://geodacenter.github.io/data-and-lab//Chi-Carjackings/",
+            "hash": "266bb2a1a56b1254553a04d04b3d06cf0a4140904dd7dfc3cd5c32bf5d70d98f",
+            "filename": "Chi_Carjackings.zip",
+            "members": [
+                "Chicago_Carjackings.geojson"
+            ]
+        },
+        "chicago_sdoh": {
+            "url": "https://geodacenter.github.io/data-and-lab//data/Chi-SDOH.zip",
+            "license": "NA",
+            "attribution": "Center for Spatial Data Science, University of Chicago",
+            "name": "geoda.chicago_sdoh",
+            "description": "Socio-economic determinants of health in 2014",
+            "geometry_type": "Polygon",
+            "nrows": 791,
+            "ncols": 52,
+            "details": "https://geodacenter.github.io/data-and-lab//Chi-SDOH/",
+            "hash": "45ed38736f15e6ba423fd81d574de61907dbe86555f8b4fae9ce4183b99a6eee",
+            "filename": "Chi-SDOH.zip",
+            "members": [
+                "Chi-SDOH.geojson"
+            ]
+        },
+        "ceara_zika": {
+            "url": "https://geodacenter.github.io/data-and-lab//data/ceara.zip",
+            "license": "NA",
+            "attribution": "Center for Spatial Data Science, University of Chicago",
+            "name": "geoda.ceara_zika",
+            "description": "Zika and Microcephaly infections and socio-economic profiles for 2013-2016",
+            "geometry_type": "Polygon",
+            "nrows": 184,
+            "ncols": 36,
+            "details": "https://geodacenter.github.io/data-and-lab//Ceara-Zika/",
+            "hash": "46748fa4c5a546710e8561f378fbea8a2ec8aecf77cdccb740762d235406294c",
+            "filename": "ceara.zip",
+            "members": [
+                "ceara.geojson"
+            ]
+        },
+        "oaxaca": {
+            "url": "https://geodacenter.github.io/data-and-lab//data/Oaxaca.zip",
+            "license": "NA",
+            "attribution": "Center for Spatial Data Science, University of Chicago",
+            "name": "geoda.oaxaca",
+            "description": "Poverty and food insecurity indicators and census variables for 2010 and 2020 in the State of Oaxaca, Mexico",
+            "geometry_type": "Polygon",
+            "nrows": 570,
+            "ncols": 412,
+            "details": "https://geodacenter.github.io/data-and-lab//Oaxaca-Development/",
+            "hash": "013738d09f00580065280bedd494c8b8e0321955b99692d4c316193aa7319a5e",
+            "filename": "Oaxaca.zip",
+            "members": [
+                "Oaxaca/oaxaca.geojson"
+            ]
+        },
+        "italy_banks": {
+            "url": "https://geodacenter.github.io/data-and-lab//data/italy_banks.zip",
+            "license": "NA",
+            "attribution": "Center for Spatial Data Science, University of Chicago",
+            "name": "geoda.italy_banks",
+            "description": "Italy community bank performance indicators for 2011-17",
+            "geometry_type": "Point",
+            "nrows": 261,
+            "ncols": 102,
+            "details": "https://geodacenter.github.io/data-and-lab//Italy-Community-Banks/",
+            "hash": "823570beaf3ffaabad3747bd9db6ad21f74bdc6a1592e78ca899b63c025b7ae4",
+            "filename": "italy_banks.zip",
+            "members": [
+                "italy_banks/italy_banks.dbf",
+                "italy_banks/italy_banks.prj",
+                "italy_banks/italy_banks.shp",
+                "italy_banks/italy_banks.shx"
+            ]
+        },
+        "denver": {
+            "url": "https://geodacenter.github.io/data-and-lab//data/denver.zip",
+            "license": "NA",
+            "attribution": "Center for Spatial Data Science, University of Chicago",
+            "name": "geoda.denver",
+            "description": "Demographics and housing in Denver neighborhoods.",
+            "geometry_type": "Polygon",
+            "nrows": 75,
+            "ncols": 56,
+            "details": "https://geodacenter.github.io/data-and-lab//denver/",
+            "hash": "1fa68a6302999093c49aa31f5bed8051f00398dcd4913d5a06cd9ac66f87354f",
+            "filename": "denver.zip",
+            "members": [
+                "denver/denver.dbf",
+                "denver/denver.prj",
+                "denver/denver.shp",
+                "denver/denver.shx"
+            ]
         }
     },
     "ny": {
