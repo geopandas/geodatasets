@@ -347,13 +347,13 @@ def _load_json(f):
 
     items = Bunch()
 
-    for item_name in data.keys():
+    for item_name in sorted(data.keys()):
         item = data[item_name]
 
         if "url" in item.keys():
             items[item_name] = Dataset(item)
         else:
-            items[item_name] = Bunch({i: Dataset(item[i]) for i in item})
+            items[item_name] = Bunch({i: Dataset(item[i]) for i in sorted(item)})
 
     return items
 
