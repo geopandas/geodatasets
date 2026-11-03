@@ -162,6 +162,19 @@ def test_filter(test_bunch):
     assert len(test_bunch.filter(function=custom).flatten()) == 1
 
 
+def test_filter_geometry_type_missing(test_bunch):
+    # geometry_type is optional, Datasets without it are not matched
+    test_bunch["data3"] = Dataset(
+        url="https://myserver.com/data3.zip",
+        name="my_public_data3",
+        filename="data3.zip",
+        hash="qwertyuiopasdfghjklzxcvbnm1234567890",
+    )
+    filtered = test_bunch.filter(geometry_type="Point")
+    assert list(filtered.flatten()) == ["my_public_data2"]
+    assert len(test_bunch.filter(name="data3").flatten()) == 1
+
+
 @pytest.mark.request
 def test_get_path():
     in_cache = pooch.os_cache("geodatasets").joinpath("nybb_16a.zip")

@@ -209,7 +209,8 @@ class Bunch(dict):
             if geometry_type is not None:
                 geom_type_match = False
                 if (
-                    dataset.geometry_type.upper()
+                    "geometry_type" in dataset.keys()
+                    and dataset.geometry_type.upper()
                     == geometry_type.translate(QUERY_NAME_TRANSLATION).upper()
                 ):
                     geom_type_match = True
